@@ -26,6 +26,7 @@
     <link rel="canonical" href="https://nodexapp.github.io/" />
     <link rel="icon" type="image/png" href="/favicon.png" />
     <link rel="apple-touch-icon" href="/favicon.png" />
+    <script type="module" crossorigin src="/assets/index-B1LT9qex.js"></script>
     <link rel="stylesheet" crossorigin href="/assets/styles-DlrnIPat.css">
   </head>
   <body>
@@ -42,10 +43,7 @@
             />
             <span class="landing-wordmark">Nodex</span>
           </a>
-          <a
-            href="https://github.com/Asphocarp/nodex"
-            class="landing-nav-link"
-          >
+          <a href="https://github.com/junyudev/nodex" class="landing-nav-link">
             GitHub
           </a>
         </div>
@@ -75,7 +73,8 @@
 
             <div class="landing-actions landing-fade-up">
               <a
-                href="https://github.com/Asphocarp/nodex/releases/latest"
+                id="landing-download-button"
+                href="https://github.com/junyudev/nodex/releases/latest/download/Nodex-latest-arm64.dmg"
                 class="landing-primary-button"
               >
                 <span class="landing-apple-glyph" aria-hidden="true"></span>
@@ -83,9 +82,14 @@
               </a>
             </div>
 
-            <div class="landing-release-note landing-fade-up" aria-label="Release information">
+            <div
+              class="landing-release-note landing-fade-up"
+              aria-label="Release information"
+            >
               <span class="landing-meta-pill">Beta</span>
-              <span class="landing-release-copy">v0.1.5 · Requires macOS 12+</span>
+              <span class="landing-release-copy"
+                >Latest stable · Requires macOS 12+</span
+              >
             </div>
           </section>
         </main>
