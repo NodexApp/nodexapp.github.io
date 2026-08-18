@@ -3,6 +3,50 @@
     <channel>
         <title>Nodex</title>
         <item>
+            <title>0.2.2</title>
+            <pubDate>Tue, 18 Aug 2026 21:03:41 GMT</pubDate>
+            <link>https://nodex.jyu.app/</link>
+            <sparkle:version>1.11.45</sparkle:version>
+            <sparkle:shortVersionString>0.2.2</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>12.0.0</sparkle:minimumSystemVersion>
+            <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
+            <description sparkle:format="markdown"><![CDATA[### Added
+- Added an opt-in Nightly update channel with signed, notarized mainline builds, isolated Sparkle feeds, and an in-app Stable/Nightly selector.
+- Added coherent Page connections: inline `@Page` mentions, live `/Embed page` references, internal Page links and contextual deeplink paste, typed `/Subpage` creation, and authorized `Referenced by` navigation in Page Stage.
+- Added shared image preview and restorable right-panel editing for uploaded and generated images, including direct Composer entry, New Chat and queued edit submission, zoom and pan, positional comments, removal masks, aspect-ratio edits, and Focused/Canvas generated-image workflows.
+- Added interactive MCP Apps with thread-scoped tools and resources, stable inline/right-panel/fullscreen presentation, and a Main-owned isolated Electron sandbox that denies guest permissions, popups, navigation, downloads, and unauthorized network access.
+- Added a dense, virtualized task List with Core-backed grouping, nested sub-pages, automatic windows, shared Board selection, inline Property editing, keyboard and bulk actions, atomic drag-and-drop, conflict recovery, and Undo.
+- Added native NFM Block promotion into List views, with exact gap and group targets, truthful derived-sort feedback, task shorthand, Move/Copy, and atomic Undo shared with Board.
+- Added short, searchable IDs for Database Pages, with Core-confirmed prefix setup, default-on List and optional Board display controls, consistent copy actions, authorized historical lookup after moves or prefix changes, explicit ambiguity handling, and CLI/Agent resolution alongside canonical UUID identity.
+- Added Relation Properties for linking Database Pages, with secure previews, paged editing, and contains/empty filters.
+- Added Kanban Page actions to open a Page in a new focused Chat Session or send its canonical content to an existing or new chat.
+- Added an app-level Kanban Page composer with rich descriptions, schema-aware properties, exact multi-panel targeting, recoverable drafts, compact and expanded writing modes, a create-more workflow, and a configurable contextual shortcut.
+- Added a searchable keyboard shortcut reference plus Board-first navigation, Peek, selection, property editing, reordering, expanded Page creation, and sequence shortcuts for opening and navigating Pages, chats, and Settings.
+
+### Changed
+- Database Views now keep one durable identity and Filter while switching between Board and List; personal display changes persist per View and can be reset or published as the View default.
+- Board and List now share effective View authority and layout-independent manual order, and every Board grouping uses the same compact Column/Card UI, whole-card drag, column controls, Page menus, and keyboard behavior.
+- Replaced the Library workspace and ownership tree with a compact Pages section for standalone top-level resources; every Page, Database, and Canvas in a window now shares one restorable tablist with searchable open/new actions, breadcrumbs, and app-wide Back/Forward navigation without switching Projects.
+
+### Removed
+- Removed the former Table, top-level expandable List, and Database Calendar presentations; scheduling, recurrence, reminders, and occurrence data remain available as independent domain capabilities.
+- Removed the `P4 - Later` priority tier; existing P4 assignments, saved View filters, and local UI filters migrate to `P3 - Low`.
+
+### Fixed
+- Fixed NFM Block promotion so task shorthand such as `1XL(ui, unclear)` atomically becomes Page Priority, Estimate, and Tags; unsafe interpretations preserve the complete title, and the whole promotion can be safely undone.
+- Fixed Project New Chat Terminals failing before the first message; they now open in the Project workspace and remain the same Terminal when the Chat gains its Thread.
+- Fixed the NFM `Move to` picker so Page and Database-status destinations commit real atomic Block moves, stay inside the source Project's write authority, and show specific retryable errors instead of a generic failure.
+- Fixed sustained Page editing causing repeated Board/List projection reads and excessive renderer CPU and memory growth; editing updates, recovery deltas, and canonical repairs now converge through bounded single-flight work.
+- Fixed native NFM indent, outdent, reorder, and local undo being rejected after durable synchronization; collaborative Block placement now follows the canonical Document tree without weakening cross-Document move safety.
+- Fixed moving chats between Projects so missing folder access can be granted from an explicit confirmation, the grant and move commit together, and Project chats can be moved back to Chats without losing their workspace context.
+- Fixed Page editors and cached Page or Database View tabs re-entering loading during typing, unrelated edits, reset retries, or tab switches; Relation previews and restored Database details now refresh only from their exact matching changes.
+- Fixed parent-linked subagent tasks so they remain in parent-conversation activity without appearing as standalone Project or projectless sidebar chats; any leaked Session is retired when late parent metadata arrives.
+- Fixed Page Detail losing its entire Property surface after an optional Source Property was deleted; remaining and custom Properties now stay editable, schema changes refresh open Pages, and destructive deletion is confirmed with exact View blockers.
+- Fixed Project-scoped Pages, Documents, and Database Views remaining visible from stale client caches after ownership or access was revoked.
+]]></description>
+            <enclosure url="https://github.com/junyudev/nodex/releases/download/v0.2.2/Nodex-0.2.2-arm64.zip" length="526522028" type="application/octet-stream" sparkle:edSignature="GtE7vlefkcsfebljGpNkl22vuLwP8Sy+dZZG5ck8dIvPBDEiitHhB2QXJBsHOXZcPBpPptB56tDf1Gej8Y7EBQ=="/>
+        </item>
+        <item>
             <title>0.2.1</title>
             <pubDate>Sun, 02 Aug 2026 19:17:07 GMT</pubDate>
             <link>https://nodex.jyu.app/</link>
@@ -10,23 +54,11 @@
             <sparkle:shortVersionString>0.2.1</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>12.0.0</sparkle:minimumSystemVersion>
             <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
-            <description sparkle:format="markdown"><![CDATA[### Added
-- Added Window Session-owned Project and Session Scenes with one fixed owner-root primary and shared right/bottom panel surfaces. Projects can open with zero chats, while Database, Page, Canvas, Files, Browser, Review, and Terminal surfaces no longer need a chat as their panel host.
-- Added native macOS Picture-in-Picture for background Browser work and Apple Silicon Computer Use, including live desktop-app presentation, native per-task visibility, and turn-scoped cleanup.
-
-### Changed
-- Replaced the automatically seeded `Database View` chat with Project Home: the Project's current Database is the protected root surface, its footer Agent Dock can work with a new or existing task without navigating away, and Browser Use opens controlled pages in the task that owns them.
-- Window restore and new-window cloning now persist one owner-scoped Scene layout for both Projects and Sessions instead of parallel Project Session panel-view models.
-
-### Fixed
-- Fixed Project folder controls so the label opens Project Home and the leading chevron changes chat disclosure without either action triggering the other.
-- New Session Scenes now start with the right panel collapsed, while Project Home and the explicit first-Project Welcome presentation retain their intended full-width layouts.
-- Fixed background Browser tabs so agent requests with hidden presentation remain available without opening the right panel or changing the active tab, split, focus history, or maximized surface.
-]]></description>
-            <enclosure url="https://github.com/junyudev/nodex/releases/download/v0.2.1/Nodex-0.2.1-arm64.zip" length="537089592" type="application/octet-stream" sparkle:edSignature="MxvbEB8ce67yFAfJMz86pepJXmkoaRi+YfbG+3RFrysnnNWsErTpJV/UIQZIzHGdc7/IvZz3pXx9d+6xGewqCg=="/>
+            <enclosure url="https://github.com/junyudev/nodex/releases/download/v0.2.2/Nodex-0.2.1-arm64.zip" length="537089592" type="application/octet-stream" sparkle:edSignature="MxvbEB8ce67yFAfJMz86pepJXmkoaRi+YfbG+3RFrysnnNWsErTpJV/UIQZIzHGdc7/IvZz3pXx9d+6xGewqCg=="/>
         </item>
     </channel>
-</rss><!-- sparkle-signatures:
-edSignature: P56lJGxlr9tC9nIhakrIPV7XTVyZWriN4LUO+MxI8l6HkD32Grk6yR9lqAmoIDeKHea96CQphzAyVEvqhE6QBA==
-length: 2500
+</rss>
+<!-- sparkle-signatures:
+edSignature: ogLiCVBph8OnXw/cFOlAKfrl8bupBn29HlaCn5lsgSQqbahyKS1d4fYK06nN0oLLUD+3DsgP28Z6/sxuXnXnAg==
+length: 7341
 -->
