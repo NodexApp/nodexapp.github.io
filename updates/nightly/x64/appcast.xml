@@ -3,18 +3,18 @@
     <channel>
         <title>Nodex</title>
         <item>
-            <title>0.2.3-nightly.20260909.1426</title>
-            <pubDate>Wed, 09 Sep 2026 11:24:48 GMT</pubDate>
+            <title>0.2.3-nightly.20260919.1462</title>
+            <pubDate>Sat, 19 Sep 2026 15:08:27 GMT</pubDate>
             <link>https://nodex.jyu.app/</link>
-            <sparkle:version>1.14.26</sparkle:version>
-            <sparkle:shortVersionString>0.2.3-nightly.20260909.1426</sparkle:shortVersionString>
+            <sparkle:version>1.14.62</sparkle:version>
+            <sparkle:shortVersionString>0.2.3-nightly.20260919.1462</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>15.0.0</sparkle:minimumSystemVersion>
-            <description sparkle:format="markdown"><![CDATA[Nightly build from `35b4b3bcdbeebd93df1ad6b61758dea2cb92471f`.
+            <description sparkle:format="markdown"><![CDATA[Nightly build from `901ebae1203e80cfc7dabba0c94d3a2eff3b24af`.
 ]]></description>
-            <enclosure url="https://github.com/junyudev/nodex/releases/download/v0.2.3-nightly.20260909.1426/Nodex-0.2.3-nightly.20260909.1426-x64.zip" length="627425429" type="application/octet-stream" sparkle:edSignature="VZIJHthI5FYNzNshQDoQrWSWiz76LFGqANNwt/q6PtPwve2tzsG1tqvmcwVwAAp6vmJEnxVoaEcrdoUmgC0VDQ=="/>
+            <enclosure url="https://github.com/junyudev/nodex/releases/download/v0.2.3-nightly.20260919.1462/Nodex-0.2.3-nightly.20260919.1462-x64.zip" length="638180226" type="application/octet-stream" sparkle:edSignature="70wwgNhhTaOtq+BkfoxS/tbhWQ5ME+dw4Kjn/7KsrQNcFENGB9ncnQ2fQuu3vOqW9HrNoYO/DFqYoOVbKwbHBQ=="/>
         </item>
     </channel>
 </rss><!-- sparkle-signatures:
-edSignature: swVTUErvF+N97YdlZKcRw2dT1q6fFFP7tKIHBSzxjgKatGriz68cclbX1kX4qFzsZk0awNuR3QnD02hwkBpyDg==
+edSignature: Upt+0XSS32pNjQRL/BX5rBTufREet/CVZRzx8GqQ0EW0Wy0yR7lZtHPDhv0qGXK08zlf22uO8JjgiGi7+zklBA==
 length: 1075
 -->
