@@ -3,18 +3,28 @@
     <channel>
         <title>Nodex</title>
         <item>
+            <title>0.2.3-nightly.20260919.1465</title>
+            <pubDate>Sat, 19 Sep 2026 16:31:04 GMT</pubDate>
+            <link>https://nodex.jyu.app/</link>
+            <sparkle:version>1.14.65</sparkle:version>
+            <sparkle:shortVersionString>0.2.3-nightly.20260919.1465</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>15.0.0</sparkle:minimumSystemVersion>
+            <description sparkle:format="markdown"><![CDATA[Nightly build from `3d8c18fb0732044cb2bd11a7e38249b8f06627d5`.
+]]></description>
+            <enclosure url="https://github.com/junyudev/nodex/releases/download/v0.2.3-nightly.20260919.1465/Nodex-0.2.3-nightly.20260919.1465-x64.zip" length="638187211" type="application/octet-stream" sparkle:edSignature="7lhqf4Oo5enM5//cAJeLCGfgrD6VwTMhrKgA5OubuBtuAXYIcvLfq5JsTIAvW8PcnfOyGCfb2zllDwsTKb1xCA=="/>
+        </item>
+        <item>
             <title>0.2.3-nightly.20260919.1462</title>
             <pubDate>Sat, 19 Sep 2026 15:08:27 GMT</pubDate>
             <link>https://nodex.jyu.app/</link>
             <sparkle:version>1.14.62</sparkle:version>
             <sparkle:shortVersionString>0.2.3-nightly.20260919.1462</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>15.0.0</sparkle:minimumSystemVersion>
-            <description sparkle:format="markdown"><![CDATA[Nightly build from `901ebae1203e80cfc7dabba0c94d3a2eff3b24af`.
-]]></description>
-            <enclosure url="https://github.com/junyudev/nodex/releases/download/v0.2.3-nightly.20260919.1462/Nodex-0.2.3-nightly.20260919.1462-x64.zip" length="638180226" type="application/octet-stream" sparkle:edSignature="70wwgNhhTaOtq+BkfoxS/tbhWQ5ME+dw4Kjn/7KsrQNcFENGB9ncnQ2fQuu3vOqW9HrNoYO/DFqYoOVbKwbHBQ=="/>
+            <enclosure url="https://github.com/junyudev/nodex/releases/download/v0.2.3-nightly.20260919.1465/Nodex-0.2.3-nightly.20260919.1462-x64.zip" length="638180226" type="application/octet-stream" sparkle:edSignature="70wwgNhhTaOtq+BkfoxS/tbhWQ5ME+dw4Kjn/7KsrQNcFENGB9ncnQ2fQuu3vOqW9HrNoYO/DFqYoOVbKwbHBQ=="/>
         </item>
     </channel>
-</rss><!-- sparkle-signatures:
-edSignature: Upt+0XSS32pNjQRL/BX5rBTufREet/CVZRzx8GqQ0EW0Wy0yR7lZtHPDhv0qGXK08zlf22uO8JjgiGi7+zklBA==
-length: 1075
+</rss>
+<!-- sparkle-signatures:
+edSignature: ZUOZtgEvcgIY7jQ97rHYXvM8yLXpKPbY7TZrIYQhVb6A0uICWQOSgh0XWOgYUamiF/2eQP98cszmxNemtFKLAA==
+length: 1819
 -->
