@@ -3,15 +3,24 @@
     <channel>
         <title>Nodex</title>
         <item>
+            <title>0.3.1-nightly.20260920.1477</title>
+            <pubDate>Sun, 20 Sep 2026 07:05:01 GMT</pubDate>
+            <link>https://nodex.jyu.app/</link>
+            <sparkle:version>1.14.77</sparkle:version>
+            <sparkle:shortVersionString>0.3.1-nightly.20260920.1477</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>15.0.0</sparkle:minimumSystemVersion>
+            <description sparkle:format="markdown"><![CDATA[Nightly build from `00a29c75d1cf8cdd0c567fa6439ce15e11dd2e33`.
+]]></description>
+            <enclosure url="https://github.com/junyudev/nodex/releases/download/v0.3.1-nightly.20260920.1477/Nodex-0.3.1-nightly.20260920.1477-x64.zip" length="638249190" type="application/octet-stream" sparkle:edSignature="QMYOQaH3ZUm4UbwNPAJZRvuXtDIgR+UCDHaQHtF1sBouyV25TUNw37dbuRwocqd/JrF2orCYCRGHKWdWNRQAAg=="/>
+        </item>
+        <item>
             <title>0.3.1-nightly.20260920.1473</title>
             <pubDate>Sun, 20 Sep 2026 03:43:42 GMT</pubDate>
             <link>https://nodex.jyu.app/</link>
             <sparkle:version>1.14.73</sparkle:version>
             <sparkle:shortVersionString>0.3.1-nightly.20260920.1473</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>15.0.0</sparkle:minimumSystemVersion>
-            <description sparkle:format="markdown"><![CDATA[Nightly build from `4f507af01b61358224838cf6d3f6c02e504d0763`.
-]]></description>
-            <enclosure url="https://github.com/junyudev/nodex/releases/download/v0.3.1-nightly.20260920.1473/Nodex-0.3.1-nightly.20260920.1473-x64.zip" length="638248421" type="application/octet-stream" sparkle:edSignature="AflHbdUCB/tSPEYixke9P7XzHHl8I/8wfqk11JKuhWuxvY1sCBsUIP2Rh0TzWBGgj/XdJIsK3PJ/czKROHS/DA=="/>
+            <enclosure url="https://github.com/junyudev/nodex/releases/download/v0.3.1-nightly.20260920.1477/Nodex-0.3.1-nightly.20260920.1473-x64.zip" length="638248421" type="application/octet-stream" sparkle:edSignature="AflHbdUCB/tSPEYixke9P7XzHHl8I/8wfqk11JKuhWuxvY1sCBsUIP2Rh0TzWBGgj/XdJIsK3PJ/czKROHS/DA=="/>
         </item>
         <item>
             <title>0.2.3-nightly.20260919.1471</title>
@@ -20,20 +29,11 @@
             <sparkle:version>1.14.71</sparkle:version>
             <sparkle:shortVersionString>0.2.3-nightly.20260919.1471</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>15.0.0</sparkle:minimumSystemVersion>
-            <enclosure url="https://github.com/junyudev/nodex/releases/download/v0.3.1-nightly.20260920.1473/Nodex-0.2.3-nightly.20260919.1471-x64.zip" length="638248489" type="application/octet-stream" sparkle:edSignature="tyseiot/s7P/I8Xb9IKH4UI0RbPmhZm4UQrRlXPgRcQdf+0TBq5FMtw1SIHXF17Zf6eVWjRSs1+5yVfAuln0Ag=="/>
-        </item>
-        <item>
-            <title>0.2.3-nightly.20260919.1465</title>
-            <pubDate>Sat, 19 Sep 2026 16:31:04 GMT</pubDate>
-            <link>https://nodex.jyu.app/</link>
-            <sparkle:version>1.14.65</sparkle:version>
-            <sparkle:shortVersionString>0.2.3-nightly.20260919.1465</sparkle:shortVersionString>
-            <sparkle:minimumSystemVersion>15.0.0</sparkle:minimumSystemVersion>
-            <enclosure url="https://github.com/junyudev/nodex/releases/download/v0.3.1-nightly.20260920.1473/Nodex-0.2.3-nightly.20260919.1465-x64.zip" length="638187211" type="application/octet-stream" sparkle:edSignature="7lhqf4Oo5enM5//cAJeLCGfgrD6VwTMhrKgA5OubuBtuAXYIcvLfq5JsTIAvW8PcnfOyGCfb2zllDwsTKb1xCA=="/>
+            <enclosure url="https://github.com/junyudev/nodex/releases/download/v0.3.1-nightly.20260920.1477/Nodex-0.2.3-nightly.20260919.1471-x64.zip" length="638248489" type="application/octet-stream" sparkle:edSignature="tyseiot/s7P/I8Xb9IKH4UI0RbPmhZm4UQrRlXPgRcQdf+0TBq5FMtw1SIHXF17Zf6eVWjRSs1+5yVfAuln0Ag=="/>
         </item>
     </channel>
 </rss>
 <!-- sparkle-signatures:
-edSignature: dtNHWzR3IbjGRDMiYqUDLQgxIuXUXQYijFVP+xjR8xw4p/i/37qdzh2U7Yz6Xc/ApxhL58RF2OM+s7OA/uIEBQ==
+edSignature: sFTZx3fp/lDG4Wjvznq6qeRPTTjzje5aC/abuDkQDjWycPnyK+Z5PzuNTIWwFCDJdjDiQZF59QqouqXg53puDQ==
 length: 2562
 -->
