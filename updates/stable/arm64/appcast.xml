@@ -3,62 +3,81 @@
     <channel>
         <title>Nodex</title>
         <item>
-            <title>0.2.2</title>
-            <pubDate>Tue, 18 Aug 2026 21:03:41 GMT</pubDate>
+            <title>0.3.0</title>
+            <pubDate>Sun, 20 Sep 2026 01:02:15 GMT</pubDate>
             <link>https://nodex.jyu.app/</link>
-            <sparkle:version>1.11.45</sparkle:version>
-            <sparkle:shortVersionString>0.2.2</sparkle:shortVersionString>
-            <sparkle:minimumSystemVersion>12.0.0</sparkle:minimumSystemVersion>
+            <sparkle:version>1.14.72</sparkle:version>
+            <sparkle:shortVersionString>0.3.0</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>15.0.0</sparkle:minimumSystemVersion>
             <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
             <description sparkle:format="markdown"><![CDATA[### Added
-- Added an opt-in Nightly update channel with signed, notarized mainline builds, isolated Sparkle feeds, and an in-app Stable/Nightly selector.
-- Added coherent Page connections: inline `@Page` mentions, live `/Embed page` references, internal Page links and contextual deeplink paste, typed `/Subpage` creation, and authorized `Referenced by` navigation in Page Stage.
-- Added shared image preview and restorable right-panel editing for uploaded and generated images, including direct Composer entry, New Chat and queued edit submission, zoom and pan, positional comments, removal masks, aspect-ratio edits, and Focused/Canvas generated-image workflows.
-- Added interactive MCP Apps with thread-scoped tools and resources, stable inline/right-panel/fullscreen presentation, and a Main-owned isolated Electron sandbox that denies guest permissions, popups, navigation, downloads, and unauthorized network access.
-- Added a dense, virtualized task List with Core-backed grouping, nested sub-pages, automatic windows, shared Board selection, inline Property editing, keyboard and bulk actions, atomic drag-and-drop, conflict recovery, and Undo.
-- Added native NFM Block promotion into List views, with exact gap and group targets, truthful derived-sort feedback, task shorthand, Move/Copy, and atomic Undo shared with Board.
-- Added short, searchable IDs for Database Pages, with Core-confirmed prefix setup, default-on List and optional Board display controls, consistent copy actions, authorized historical lookup after moves or prefix changes, explicit ambiguity handling, and CLI/Agent resolution alongside canonical UUID identity.
-- Added Relation Properties for linking Database Pages, with secure previews, paged editing, and contains/empty filters.
-- Added Kanban Page actions to open a Page in a new focused Chat Session or send its canonical content to an existing or new chat.
-- Added an app-level Kanban Page composer with rich descriptions, schema-aware properties, exact multi-panel targeting, recoverable drafts, compact and expanded writing modes, a create-more workflow, and a configurable contextual shortcut.
-- Added a searchable keyboard shortcut reference plus Board-first navigation, Peek, selection, property editing, reordering, expanded Page creation, and sequence shortcuts for opening and navigating Pages, chats, and Settings.
+
+- Command Palette can now search local workspace files and open previews, with directory completion shared across file-search surfaces.
+
+- Local agent tasks can discover Projects, create, fork, and move Sessions, send follow-ups, manage scheduled tasks, wait for tasks to complete or need attention, read and edit authorized content, open files at a line and targeted Review sources, navigate Sessions, use bundled document dependencies, arrange tabs, and organize the Sidebar through native application tools that respect the Turn's permissions, including verified Full access for tasks without a Project. Workbench context follows each accepted message or steer, reports missing context without blocking submission, and preserves exact long-path file targets through preview and pinning.
+- Local Full access Agent tasks can now work with Nodex through the bundled CLI, with automatic task context, command help organized by task, complete write examples, direct text streams, bare resource IDs, SQL reads across Page bodies, properties, saved Views and Files, ranked Page search, atomic schema/View configuration with saved filters, Property batches that preserve the original read versions, atomic Page creation batches, and file-based drafts that preserve Block identities and reject conflicting edits without replacing the whole Page.
+- Page and Canvas unsaved edits can now be reviewed, restored or saved as a separate copy, with reversible discard, automatic confirmation of already saved drafts, and recovery across restarts and windows. Retained packages remain individually visible after closing a document or losing the Core connection, with complete local export even when reception or preview is unavailable.
+- New tasks can run through enabled local ACP Agents with durable session recovery, negotiated controls, bounded transcripts, cancellation, and explicit local-code trust settings, while Codex remains the full-fidelity default backend.
+- Added custom Sidebar Sections for organizing Projects and chats in one durable mixed order, with drag-and-drop, context menus, bulk archive, Undoable deletion, agent tools, and multi-host Codex synchronization.
+- Database Views now have independent Board or List identities, direct tab actions and durable drag ordering, inline typed Filter and Sort rules with personal publishing, plus a settings rail for View presentation, typed Source Properties, recoverable Property removal, conditional colors, and Page Property layouts. Property edits, manual ordering and ordinary Block promotions share whole-gesture Undo and Redo with Page body and title edits in interaction order: undoing a Block drop immediately removes the promoted Pages and restores the source Blocks, while Redo preserves their identities. History survives refresh, uncertain saves never undo an older action, and transfer prompts target only their own move.
+- Library Files now exist independently of Pages, can be browsed, shared, versioned, granted, copied, and cleaned up from one Library surface, while each Page keeps only optional paths and body references. Block move/copy and keyboard cut/paste preserve shared File identity, Page and Canvas history read exact captured versions, and opt-in local-path copy exports captured versions for other desktop apps without delaying Cut. File details preserve selected identities and versions, show navigable usage locations and deletion constraints, and distinguish Page paths from shared content updates.
+- Equations now support first-class block and inline TeX authoring, while Mermaid Code Blocks add secure local code, preview, and split views with fullscreen, copy, and image export.
+- Code Blocks now offer a compact hover Action Bar, an exact searchable language catalog, plain-code copy, local line wrapping, and on-demand formatting, with matching read-only previews and no document changes from presentation state.
+- Pages can now keep durable relationships to one or more chats, show working and unread activity directly in Board and List, and manage those chats from Page Stage across restarts. Sending Page text and images from selection or Block menus uses the same chat picker and preserves the submitted image content.
+- Added reliable Composer and macOS global dictation with microphone selection, streaming-to-buffered recovery, recoverable recent recordings, inline Voice shortcut capture with validated global chords, dictionary-aware cleanup, app-level recovery notifications, clipboard-safe cross-application paste, and per-recording performance details showing the actual transcription route, cleanup latency, and connection failures.
+- Added atomic mixed selection editing for Page, Canvas, and Database owners, including complete selection- and caret-targeted copy/cut/paste across consecutive commands, nested editors, and multiple windows; portable HTML/text fallback outside Nodex; preserved nesting when copying File references as local paths; race-safe native clipboard handoff; identity-preserving first cut paste; structural Duplicate/Move/drag; semantic Backspace merges across atomic Blocks; and chronological Undo/Redo that keeps later text edits ahead of earlier structural actions, including while commands are pending, and preserves earlier local edits through structural restoration. Cut and Database View drops show immediate progress while content is being saved, with source and destination indicators clearing independently.
+- Subpages can now be turned into text, headings, toggles, lists, quotes, callouts, or code without losing their title or body; Undo restores the original Page and its identity.
+- Page mentions now support `+` and `[[`, can create a child Page from the current query or under another Page, and keep Page creation, inline mention, and Undo/Redo atomic.
 
 ### Changed
-- Database Views now keep one durable identity and Filter while switching between Board and List; personal display changes persist per View and can be reset or published as the View default.
-- Board and List now share effective View authority and layout-independent manual order, and every Board grouping uses the same compact Column/Card UI, whole-card drag, column controls, Page menus, and keyboard behavior.
-- Replaced the Library workspace and ownership tree with a compact Pages section for standalone top-level resources; every Page, Database, and Canvas in a window now shares one restorable tablist with searchable open/new actions, breadcrumbs, and app-wide Back/Forward navigation without switching Projects.
+
+- Chat unread indicators now stay separate across accounts and execution hosts, with read-state changes synchronized independently between windows.
+- Nodex now requires macOS 15 Sequoia or later so the desktop app and its native Agent toolchain share one supported system baseline.
+- Long chats now open from a bounded recent tail, load older turns and persisted search results on demand, preserve large tool output while loading older history reliably, and fork, edit, create Side chats, or export without first loading the complete transcript.
+- Subagent overviews now stay responsive as agent trees and child histories grow: they load bounded metadata and causal status only, keep unknown children from appearing finished, and attach history solely for the selected child detail.
+- Nodex now upgrades supported Profiles with a verified backup, current-only Block Document schemas and projections, independent Library File identities and exact history with preserved image and attachment bytes, bounded operational history, Core-owned Sidebar organization, coherent single-layout Database Views with typed query rules, Source-owned Page Property layouts, and safe retention for interactive editor history.
+- Permission selection now keeps custom config details out of the Composer menu and confirms the capabilities granted before enabling Full access.
 
 ### Removed
-- Removed the former Table, top-level expandable List, and Database Calendar presentations; scheduling, recurrence, reminders, and occurrence data remain available as independent domain capabilities.
-- Removed the `P4 - Later` priority tier; existing P4 assignments, saved View filters, and local UI filters migrate to `P3 - Low`.
+
+- Removed the legacy Agent runtime, provider and harness settings, application-owned provider credentials, and its import source; Codex now uses the pinned native app-server supply chain and runtime-owned authentication.
 
 ### Fixed
-- Fixed NFM Block promotion so task shorthand such as `1XL(ui, unclear)` atomically becomes Page Priority, Estimate, and Tags; unsafe interpretations preserve the complete title, and the whole promotion can be safely undone.
-- Fixed Project New Chat Terminals failing before the first message; they now open in the Project workspace and remain the same Terminal when the Chat gains its Thread.
-- Fixed the NFM `Move to` picker so Page and Database-status destinations commit real atomic Block moves, stay inside the source Project's write authority, and show specific retryable errors instead of a generic failure.
-- Fixed sustained Page editing causing repeated Board/List projection reads and excessive renderer CPU and memory growth; editing updates, recovery deltas, and canonical repairs now converge through bounded single-flight work.
-- Fixed native NFM indent, outdent, reorder, and local undo being rejected after durable synchronization; collaborative Block placement now follows the canonical Document tree without weakening cross-Document move safety.
-- Fixed moving chats between Projects so missing folder access can be granted from an explicit confirmation, the grant and move commit together, and Project chats can be moved back to Chats without losing their workspace context.
-- Fixed Page editors and cached Page or Database View tabs re-entering loading during typing, unrelated edits, reset retries, or tab switches; Relation previews and restored Database details now refresh only from their exact matching changes.
-- Fixed parent-linked subagent tasks so they remain in parent-conversation activity without appearing as standalone Project or projectless sidebar chats; any leaked Session is retired when late parent metadata arrives.
-- Fixed Page Detail losing its entire Property surface after an optional Source Property was deleted; remaining and custom Properties now stay editable, schema changes refresh open Pages, and destructive deletion is confirmed with exact View blockers.
-- Fixed Project-scoped Pages, Documents, and Database Views remaining visible from stale client caches after ownership or access was revoked.
+
+- Fixed Shell output repeating completed command results during streaming; repeated lines emitted by the command remain intact.
+- Fixed reordered or replaced Blocks retaining another Block's toggle hints or control actions.
+- Fixed local images failing to decode or export in the installed app, and code blocks failing to highlight when their language uses a display label or alias.
+- Fixed retained Documents without an owner blocking automatic Page history checkpoints.
+- Fixed Page, Canvas, and manual version saves failing in Profiles used for more than a week.
+- Fixed Page and Canvas sync getting stuck after a lost subscription; structural edits now have cancellable save waits, and rejected or uncertain edits remain available as explicit recovery exports with accurate local-save status.
+- Fixed copying or cutting nested Blocks losing their hierarchy when pasted, including consecutive Images and copies that export File references as local paths.
+- Fixed delayed editor pastes inserting at a moved cursor; paste now retains its original position and cancels if that position disappears.
+- Fixed Page Stage returning to the top or drifting after tab switches when images, equations, diagrams, or other Blocks changed height; Page tabs now restore a semantic content anchor, continuously absorb delayed layout, and keep image geometry stable throughout loading and failure states.
+- Fixed Page and Canvas content links opening in an unrelated split group; source-relative navigation now stays in the invoking tab group across Project, Session, and Pages scenes.
+- Fixed automatic editor formatting and typing links collapsing into the preceding input history; Undo now restores literal syntax first, Redo follows the same intent order, and remote collaborative edits remain outside local history.
+- Fixed creating a snapshot blocking Settings and Store writes for tens of seconds on large Profiles; snapshots now run as cancellable background jobs with live progress, preserve full restore-grade validation, and keep automatic backups inside both count and storage budgets.
+- Fixed idle automation, reminder, and maintenance polling growing Profiles indefinitely; Core now plans due work without writes and trims replay and idempotency evidence within explicit safe windows while preserving semantic history.
+- Fixed special Blocks displaying or retaining children inconsistently: callouts and quotes now enclose their complete subtree, leaf/resource Blocks reject nesting at every write boundary, and existing invalid parent edges are migrated without losing IDs or reading order.
+- Fixed Page Status and other Database Property edits reverting after some Profile upgrades; Store migration now rebuilds the complete Document and scheduled-Page projection bundle, validates it before readiness, and keeps pre-upgrade clipboard and Undo capabilities usable.
+- Fixed macOS launches appearing blank or unresponsive while a Profile opens or upgrades; the restored Nodex window now shows its branded, native-material startup state immediately and remains the same window through Workbench readiness or recoverable failure.
+- Fixed queued follow-ups disappearing or running after interruption: queues now survive restarts, pause atomically when a turn is stopped, preserve in-flight and failed rows for retry, resume in strict order, retain captured permission and service-tier choices when another window delivers them, and keep fresh steers independent from the existing queue.
+- Fixed follow-up messages losing retained model or collaboration instructions, ignoring personality changes, or replacing explicit setting resets when another window executes them.
+- Fixed chats and Side chats sometimes remaining on a loading screen after restoration completed or failed; renderer attachment now updates atomically, failures are explicit and retryable, and cached transcript content remains visible during recovery.
+- Fixed packaged macOS dictation failing before capture by aligning signed microphone capability, awaited TCC permission, and trusted audio-only Electron Session access.
+- Fixed retained Page editors crashing the renderer when table handles or another floating editor control survived a tab switch; mounted DOM capabilities and transient UI state now follow each EditorView attachment while document and undo state remain retained.
+- Fixed backup history and retention failing after an upgrade when a Profile contains cleanup receipts written by an earlier durable outcome format.
+- Fixed large, clean Profiles reopening slowly by reusing one single-use validation receipt after a graceful Core shutdown; interrupted, migrated, restored, or otherwise changed Stores still receive complete integrity validation before opening.
+- Fixed digit-leading Block titles without a shorthand separator being reported as malformed shorthand during Database promotion; authoring preview and Core promotion now use the same explicit boundary rules.
+- Fixed moving the final Block from Page Stage into Board or List failing or destabilizing the source editor; the move now completes atomically, leaves a blank editable Page, and can restore the exact original content with Undo.
+- PDF files now render natively inside Files with selectable text, safe links, page navigation, fit-width and percentage zoom, and bounded offscreen work instead of depending on Chromium's embedded PDF frame.
+- Fixed Core-backed views intermittently timing out during larger searches or maintenance; interactive work keeps reserved capacity, Full Page search avoids pathological SQLite query plans and preserves multi-term evidence, stale searches cancel silently end to end, and slow requests return typed Core outcomes instead of arbitrary transport failures.
+- Fixed background retention and automation work making the sidebar or Pages fail with Core deadlines on slower Macs; maintenance now yields in bounded slices, background work cannot starve interactive requests, the sidebar preserves its last known state during transient failures, and Page opens retry brief Core contention before asking the user to retry.
+- Hardened imported and pasted rich documents against resource exhaustion by bounding table dimensions and replacing backtracking Markdown block parsing with linear scans.
 ]]></description>
-            <enclosure url="https://github.com/junyudev/nodex/releases/download/v0.2.2/Nodex-0.2.2-arm64.zip" length="526522028" type="application/octet-stream" sparkle:edSignature="GtE7vlefkcsfebljGpNkl22vuLwP8Sy+dZZG5ck8dIvPBDEiitHhB2QXJBsHOXZcPBpPptB56tDf1Gej8Y7EBQ=="/>
-        </item>
-        <item>
-            <title>0.2.1</title>
-            <pubDate>Sun, 02 Aug 2026 19:17:07 GMT</pubDate>
-            <link>https://nodex.jyu.app/</link>
-            <sparkle:version>0.2.1</sparkle:version>
-            <sparkle:shortVersionString>0.2.1</sparkle:shortVersionString>
-            <sparkle:minimumSystemVersion>12.0.0</sparkle:minimumSystemVersion>
-            <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
-            <enclosure url="https://github.com/junyudev/nodex/releases/download/v0.2.2/Nodex-0.2.1-arm64.zip" length="537089592" type="application/octet-stream" sparkle:edSignature="MxvbEB8ce67yFAfJMz86pepJXmkoaRi+YfbG+3RFrysnnNWsErTpJV/UIQZIzHGdc7/IvZz3pXx9d+6xGewqCg=="/>
+            <enclosure url="https://github.com/junyudev/nodex/releases/download/v0.3.0/Nodex-0.3.0-arm64.zip" length="644865786" type="application/octet-stream" sparkle:edSignature="82klBFAKV28gcEdxZZeCICxJKft+1XkkpytvDqKk+JOyqvktSVeEDZ43dh9SdO/i979BZ+WNfWzrnVnt7QqSAQ=="/>
         </item>
     </channel>
-</rss>
-<!-- sparkle-signatures:
-edSignature: ogLiCVBph8OnXw/cFOlAKfrl8bupBn29HlaCn5lsgSQqbahyKS1d4fYK06nN0oLLUD+3DsgP28Z6/sxuXnXnAg==
-length: 7341
+</rss><!-- sparkle-signatures:
+edSignature: 16ixFwxMauJ1E6fZGyWjtRDsCMsUZ5gJRPIG6VtjUsxhOo5+0D8MT6i0XEgm7oWnWCOXPVPn/MgqaAPFm+/bBQ==
+length: 14702
 -->
