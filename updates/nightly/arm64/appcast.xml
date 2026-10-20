@@ -3,40 +3,19 @@
     <channel>
         <title>Nodex</title>
         <item>
-            <title>0.3.1-nightly.20260922.1479</title>
-            <pubDate>Tue, 22 Sep 2026 10:35:40 GMT</pubDate>
+            <title>0.3.1-nightly.20261020.1655</title>
+            <pubDate>Tue, 20 Oct 2026 12:33:47 GMT</pubDate>
             <link>https://nodex.jyu.app/</link>
-            <sparkle:version>1.14.79</sparkle:version>
-            <sparkle:shortVersionString>0.3.1-nightly.20260922.1479</sparkle:shortVersionString>
+            <sparkle:version>1.16.55</sparkle:version>
+            <sparkle:shortVersionString>0.3.1-nightly.20261020.1655</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>15.0.0</sparkle:minimumSystemVersion>
             <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
-            <description sparkle:format="markdown"><![CDATA[Nightly build from `68ab41edacf30bb28b2112820d119fabc870a7a0`.
+            <description sparkle:format="markdown"><![CDATA[Nightly build from `bf07dc5a16e9cd5a0fcf8d89985f05c1fabf50ee`.
 ]]></description>
-            <enclosure url="https://github.com/junyudev/nodex/releases/download/v0.3.1-nightly.20260922.1479/Nodex-0.3.1-nightly.20260922.1479-arm64.zip" length="645087486" type="application/octet-stream" sparkle:edSignature="QeFXKhEPqHc0xPLTOWgT/eRVgprNOZw2WeV24e6MairFR5XzSLJeJi4YFXWkRy+tWZ7PTBrZXkwm9zBq2ubFBg=="/>
-        </item>
-        <item>
-            <title>0.3.1-nightly.20260920.1477</title>
-            <pubDate>Sun, 20 Sep 2026 07:05:01 GMT</pubDate>
-            <link>https://nodex.jyu.app/</link>
-            <sparkle:version>1.14.77</sparkle:version>
-            <sparkle:shortVersionString>0.3.1-nightly.20260920.1477</sparkle:shortVersionString>
-            <sparkle:minimumSystemVersion>15.0.0</sparkle:minimumSystemVersion>
-            <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
-            <enclosure url="https://github.com/junyudev/nodex/releases/download/v0.3.1-nightly.20260922.1479/Nodex-0.3.1-nightly.20260920.1477-arm64.zip" length="644792684" type="application/octet-stream" sparkle:edSignature="+0161jurcvBRmLSqkvPV/XCJuljM4SYcr+Xum9IDZxUQJvPPYbYjCetzLgn6tk+HUg5xSB9fNo7eWhjA5L+vBA=="/>
-        </item>
-        <item>
-            <title>0.3.1-nightly.20260920.1473</title>
-            <pubDate>Sun, 20 Sep 2026 03:43:42 GMT</pubDate>
-            <link>https://nodex.jyu.app/</link>
-            <sparkle:version>1.14.73</sparkle:version>
-            <sparkle:shortVersionString>0.3.1-nightly.20260920.1473</sparkle:shortVersionString>
-            <sparkle:minimumSystemVersion>15.0.0</sparkle:minimumSystemVersion>
-            <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
-            <enclosure url="https://github.com/junyudev/nodex/releases/download/v0.3.1-nightly.20260922.1479/Nodex-0.3.1-nightly.20260920.1473-arm64.zip" length="644793486" type="application/octet-stream" sparkle:edSignature="0UmGPSQACElTVHV0jqFNiEekXaBqSq6HoQmAk8pyXMouKfZRYNeuXkk4bfUdf0GY/+96WhO12uRwulm9Q1DCBQ=="/>
+            <enclosure url="https://github.com/junyudev/nodex/releases/download/v0.3.1-nightly.20261020.1655/Nodex-0.3.1-nightly.20261020.1655-arm64.zip" length="794594462" type="application/octet-stream" sparkle:edSignature="T1GBwx0cB0THhUGtLuaVtrWzsqNCLxSQRnKSZWAn+92B+NrsRDfARYDbZYGPiS4AZ8fqYoUNd91hLrcMagKtBQ=="/>
         </item>
     </channel>
-</rss>
-<!-- sparkle-signatures:
-edSignature: 46/QkXmya5Dd6qyBzzkJNs6YJ8zH3jXNmKyQeqMbfeV94lMPvx/dpSbP0222ej4u66hR9FfVgESNu5dLurZhCA==
-length: 2805
+</rss><!-- sparkle-signatures:
+edSignature: 72XH98tJ6aY9crdZMDQVliEKX4K4b9zijqXJrkfjTeL98yqhmI70Vni+lryusc+rIa/BI2UigCfqVRxOsNxwDQ==
+length: 1156
 -->
