@@ -3,81 +3,94 @@
     <channel>
         <title>Nodex</title>
         <item>
-            <title>0.3.0</title>
-            <pubDate>Sun, 20 Sep 2026 01:02:15 GMT</pubDate>
+            <title>0.4.0</title>
+            <pubDate>Thu, 22 Oct 2026 11:01:53 GMT</pubDate>
             <link>https://nodex.jyu.app/</link>
-            <sparkle:version>1.14.72</sparkle:version>
-            <sparkle:shortVersionString>0.3.0</sparkle:shortVersionString>
+            <sparkle:version>1.16.75</sparkle:version>
+            <sparkle:shortVersionString>0.4.0</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>15.0.0</sparkle:minimumSystemVersion>
             <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
             <description sparkle:format="markdown"><![CDATA[### Added
 
-- Command Palette can now search local workspace files and open previews, with directory completion shared across file-search surfaces.
+- Home and Space separate chats and Projects from content browsing while remembering each destination. The navigation rail remains available with the sidebar hidden, and each split panel has an Open tabs chooser with live titles and counts.
 
-- Local agent tasks can discover Projects, create, fork, and move Sessions, send follow-ups, manage scheduled tasks, wait for tasks to complete or need attention, read and edit authorized content, open files at a line and targeted Review sources, navigate Sessions, use bundled document dependencies, arrange tabs, and organize the Sidebar through native application tools that respect the Turn's permissions, including verified Full access for tasks without a Project. Workbench context follows each accepted message or steer, reports missing context without blocking submission, and preserves exact long-path file targets through preview and pinning.
-- Local Full access Agent tasks can now work with Nodex through the bundled CLI, with automatic task context, command help organized by task, complete write examples, direct text streams, bare resource IDs, SQL reads across Page bodies, properties, saved Views and Files, ranked Page search, atomic schema/View configuration with saved filters, Property batches that preserve the original read versions, atomic Page creation batches, and file-based drafts that preserve Block identities and reject conflicting edits without replacing the whole Page.
-- Page and Canvas unsaved edits can now be reviewed, restored or saved as a separate copy, with reversible discard, automatic confirmation of already saved drafts, and recovery across restarts and windows. Retained packages remain individually visible after closing a document or losing the Core connection, with complete local export even when reception or preview is unavailable.
-- New tasks can run through enabled local ACP Agents with durable session recovery, negotiated controls, bounded transcripts, cancellation, and explicit local-code trust settings, while Codex remains the full-fidelity default backend.
-- Added custom Sidebar Sections for organizing Projects and chats in one durable mixed order, with drag-and-drop, context menus, bulk archive, Undoable deletion, agent tools, and multi-host Codex synchronization.
-- Database Views now have independent Board or List identities, direct tab actions and durable drag ordering, inline typed Filter and Sort rules with personal publishing, plus a settings rail for View presentation, typed Source Properties, recoverable Property removal, conditional colors, and Page Property layouts. Property edits, manual ordering and ordinary Block promotions share whole-gesture Undo and Redo with Page body and title edits in interaction order: undoing a Block drop immediately removes the promoted Pages and restores the source Blocks, while Redo preserves their identities. History survives refresh, uncertain saves never undo an older action, and transfer prompts target only their own move.
-- Library Files now exist independently of Pages, can be browsed, shared, versioned, granted, copied, and cleaned up from one Library surface, while each Page keeps only optional paths and body references. Block move/copy and keyboard cut/paste preserve shared File identity, Page and Canvas history read exact captured versions, and opt-in local-path copy exports captured versions for other desktop apps without delaying Cut. File details preserve selected identities and versions, show navigable usage locations and deletion constraints, and distinguish Page paths from shared content updates.
-- Equations now support first-class block and inline TeX authoring, while Mermaid Code Blocks add secure local code, preview, and split views with fullscreen, copy, and image export.
-- Code Blocks now offer a compact hover Action Bar, an exact searchable language catalog, plain-code copy, local line wrapping, and on-demand formatting, with matching read-only previews and no document changes from presentation state.
-- Pages can now keep durable relationships to one or more chats, show working and unread activity directly in Board and List, and manage those chats from Page Stage across restarts. Sending Page text and images from selection or Block menus uses the same chat picker and preserves the submitted image content.
-- Added reliable Composer and macOS global dictation with microphone selection, streaming-to-buffered recovery, recoverable recent recordings, inline Voice shortcut capture with validated global chords, dictionary-aware cleanup, app-level recovery notifications, clipboard-safe cross-application paste, and per-recording performance details showing the actual transcription route, cleanup latency, and connection failures.
-- Added atomic mixed selection editing for Page, Canvas, and Database owners, including complete selection- and caret-targeted copy/cut/paste across consecutive commands, nested editors, and multiple windows; portable HTML/text fallback outside Nodex; preserved nesting when copying File references as local paths; race-safe native clipboard handoff; identity-preserving first cut paste; structural Duplicate/Move/drag; semantic Backspace merges across atomic Blocks; and chronological Undo/Redo that keeps later text edits ahead of earlier structural actions, including while commands are pending, and preserves earlier local edits through structural restoration. Cut and Database View drops show immediate progress while content is being saved, with source and destination indicators clearing independently.
-- Subpages can now be turned into text, headings, toggles, lists, quotes, callouts, or code without losing their title or body; Undo restores the original Page and its identity.
-- Page mentions now support `+` and `[[`, can create a child Page from the current query or under another Page, and keep Page creation, inline mention, and Undo/Redo atomic.
+- An Inbox above New chat captures thoughts, todos and questions as Pages without first choosing a Project, and opens them as tabs beside itself. A suggestion Agent names messages and always proposes a concrete next step for confirmation, with exact targets and grouped scope visible. Drafts and confirmed inputs survive interrupted replies, edits preserve concurrent changes, and grouped filing has one atomic Undo. Busy chats receive confirmed messages into their own queue. Settings reuse available models while refreshing. Handled messages leave for History, and a message sent by mistake can be deleted for good. Agents and `nodex inbox send` can leave messages in the Inbox of the Project they work in. Messages are written in Markdown and can carry pasted, dropped or picked images, and the stream shows each message with its formatting and images. A message marked important stays within reach: while it is out of view, the Inbox points back to it with how long it has waited.
+
+- Appearance settings can choose UI, content and code fonts separately for light and dark themes, with independent UI, code and Page text sizes that stay consistent across windows and restart.
+
+- A started chat can continue on another Agent: choose another Agent's model and the next message carries the conversation so far to it, including in finished chats. Returning to an earlier Agent resumes its own conversation with only what it missed, and the transcript marks each handoff. Agents can do the same for another chat, and each model keeps the options last chosen for it.
+
+- A fork can merge its finished work back into the chat it came from with `/merge`; that chat's next message carries what the fork found, on whichever Agent it uses. Agents can merge forks they manage.
+
+- Codex and Claude chats can delegate work to each other, open each child's conversation, and receive results after the parent Turn ends. Delegated work, result delivery and cancellation survive runtime restart, while Profile snapshots preserve the complete execution history and native conversation identities.
+
+- Chats can use configured OpenCode models, including Kimi and OpenRouter providers, through the shared searchable model menu, with native options and questions. OpenCode is enabled by default, initially showing its `-free` models with other models available through Show all models. If OpenCode is missing, its official installer is available directly from the model menu and Settings. Independent profiles preserve model choices, and conversation history restores each prompt with its replies across restart and pagination.
+
+- Local tasks can use Claude Code with its existing login, configuration, skills and tools in the shared conversation UI, including images, native model and effort choices, questions, task details, steering, compaction, forks and session recovery. Chats can start in the Project folder or a managed worktree with the selected starting state and setup environment, then move between them while retaining the same native conversation and uncommitted changes. Existing CLI conversations can be connected to a Project or projectless chat and inspected through their native history. Separate profiles support environment variables, encrypted tokens and custom models. Application tools and scheduled tasks use the selected native profile.
+
+- Dictation streams into your draft by default, preserves edits when the cursor moves, and offers captured speech for recovery after an interruption. Streaming uses authenticated desktop connections with workspace and system-proxy routing, and performance details identify handshake rejections and timeouts.
+- Admitted Codex chats can start realtime voice with microphone and output mute controls. Calls stay active while switching chats within the same window and release their microphone when ended or cancelled.
+- Voice settings can manage an account dictionary when available.
+- Voice settings can transcribe a selected WebM file and retain its audio and text with recent recordings for copying or retrying.
+- Chats render interactive HTML responses with calendars, tooltips, tabs, carousels and icons in isolated widgets. Fullscreen viewing and switching chats within one window preserve the live document; saved selections recover when it is rebuilt, follow-ups can use saved model state, and authorized downloads and image copying are available. Authored adjustments can preview changes and send them with the next request.
+- Chats show created conversations as navigable results with reply previews. Opening them preserves the execution host and pending worktree identity; child conversations open in their parent context.
+- Assistant responses support expandable details and formulas written with slash delimiters or math code fences.
+- Suggested tasks prepare a focused draft in the source Project, ready for review and sending.
+- Message images can open in a separate read-only tab, copy their contents or web address, add an attachment to the chat, and download a copy.
+- MCP Apps in chat messages can add context to the draft and voice call while preserving updates that arrive during submission.
+- Files can preview remote text, Markdown, images and PDFs while preserving the source host when pinned or reopened.
+- Any earlier message in a chat can be edited, not only the latest. Sending the edit continues the conversation from the rewritten message with its images and attached context, replacing every later Turn while leaving files untouched. Local Codex and Claude chats now offer editing too, and an open edit keeps its draft while you scroll.
 
 ### Changed
 
-- Chat unread indicators now stay separate across accounts and execution hosts, with read-state changes synchronized independently between windows.
-- Nodex now requires macOS 15 Sequoia or later so the desktop app and its native Agent toolchain share one supported system baseline.
-- Long chats now open from a bounded recent tail, load older turns and persisted search results on demand, preserve large tool output while loading older history reliably, and fork, edit, create Side chats, or export without first loading the complete transcript.
-- Subagent overviews now stay responsive as agent trees and child histories grow: they load bounded metadata and causal status only, keep unknown children from appearing finished, and attach history solely for the selected child detail.
-- Nodex now upgrades supported Profiles with a verified backup, current-only Block Document schemas and projections, independent Library File identities and exact history with preserved image and attachment bytes, bounded operational history, Core-owned Sidebar organization, coherent single-layout Database Views with typed query rules, Source-owned Page Property layouts, and safe retention for interactive editor history.
-- Permission selection now keeps custom config details out of the Composer menu and confirms the capabilities granted before enabling Full access.
+- Database Pages show only the properties that have something to say. Empty properties wait behind one `N more properties` row and keep their place while you fill them in; **Always show** in a Database's Page layout pins a property that should always prompt for a value.
+- Pages open in one steady layout: properties appear as soon as the Page is selected, the title keeps its weight and line breaks, and the body fills in without a placeholder flash.
+- Markdown written with `*` or `+` bullets, `1)` numbers, lists nested with spaces, or tables with short `| - |` rules keeps its lists, nesting and tables in Pages, and a paragraph that merely starts like a list or heading stays a paragraph.
+- The messages you write in a chat show in the same message style as the Inbox: lines you wrote together stay together, bare links are clickable, and long messages collapse the same way.
+- An unsent chat draft keeps its images across a reload or restart, not only its text.
 
-### Removed
+- Scheduled has its own sidebar of upcoming tasks with search, status filters and task actions. Cron tasks open as folders of their runs, runs and Heartbeat chats open without leaving Scheduled, and tasks are created and edited in a focused dialog. A selected task reads as the conversation that set it up, with a reply box for follow-up questions.
 
-- Removed the legacy Agent runtime, provider and harness settings, application-owned provider credentials, and its import source; Codex now uses the pinned native app-server supply chain and runtime-owned authentication.
+- The composer that floats over full-width content can be dragged to any corner or the bottom centre, resized from either edge, and minimized to a bubble that keeps its own corner. Its header with chat and location controls unfolds while you type, clicking it expands the latest reply above the prompt, and an unread reply appears as a card you can open or dismiss. Size and position are remembered.
+
+- A Project now opens on its own Inbox. Thoughts about the Project land there as Pages on its Board, suggestions stay inside the Project, and the sidebar counts what is waiting. The Board opens beside the Inbox as an ordinary tab, and `⌘⇧D` captures into the Inbox of the Project you are in.
+- Nodex starts faster by loading optional panels when opened, with a restart action if a view cannot load.
+
+- Agents can read and write all Projects, Pages and Library resources in the current Profile, including across Sessions and from background tasks. Native execution uses full access and automatically approves permission requests while retaining questions that need your input.
+
+- Long chats display bounded history while restoring execution, update streamed items independently, and give foreground history requests dedicated capacity. Persisted and live voice segments keep their native order alongside text; missing promoted content and failed item-history pages can be restored in place. Completed responses show their available outputs, and active voice work keeps its live status. Sending, expanding tools, and resizing the composer preserve the reading position; Find includes all assistant messages and retained voice text, with highlights restored as visible rows change.
+
+- Queued follow-ups show native and captured local messages together, with editing, ordering and delivery routed to each message's owner. Widget requests wait for the native queue to drain before submitting their confirmed context.
+
+- New Profiles reuse native Codex login, settings and skills by default, with safe directory switching, a shared native conversation chooser, and desktop tools scoped to each Nodex Profile. An independent account directory can change the active login after restart while retaining the same conversation history.
+- Nodex is now distributed under the Apache License 2.0.
 
 ### Fixed
 
-- Fixed Shell output repeating completed command results during streaming; repeated lines emitted by the command remain intact.
-- Fixed reordered or replaced Blocks retaining another Block's toggle hints or control actions.
-- Fixed local images failing to decode or export in the installed app, and code blocks failing to highlight when their language uses a display label or alias.
-- Fixed retained Documents without an owner blocking automatic Page history checkpoints.
-- Fixed Page, Canvas, and manual version saves failing in Profiles used for more than a week.
-- Fixed Page and Canvas sync getting stuck after a lost subscription; structural edits now have cancellable save waits, and rejected or uncertain edits remain available as explicit recovery exports with accurate local-save status.
-- Fixed copying or cutting nested Blocks losing their hierarchy when pasted, including consecutive Images and copies that export File references as local paths.
-- Fixed delayed editor pastes inserting at a moved cursor; paste now retains its original position and cancels if that position disappears.
-- Fixed Page Stage returning to the top or drifting after tab switches when images, equations, diagrams, or other Blocks changed height; Page tabs now restore a semantic content anchor, continuously absorb delayed layout, and keep image geometry stable throughout loading and failure states.
-- Fixed Page and Canvas content links opening in an unrelated split group; source-relative navigation now stays in the invoking tab group across Project, Session, and Pages scenes.
-- Fixed automatic editor formatting and typing links collapsing into the preceding input history; Undo now restores literal syntax first, Redo follows the same intent order, and remote collaborative edits remain outside local history.
-- Fixed creating a snapshot blocking Settings and Store writes for tens of seconds on large Profiles; snapshots now run as cancellable background jobs with live progress, preserve full restore-grade validation, and keep automatic backups inside both count and storage budgets.
-- Fixed idle automation, reminder, and maintenance polling growing Profiles indefinitely; Core now plans due work without writes and trims replay and idempotency evidence within explicit safe windows while preserving semantic history.
-- Fixed special Blocks displaying or retaining children inconsistently: callouts and quotes now enclose their complete subtree, leaf/resource Blocks reject nesting at every write boundary, and existing invalid parent edges are migrated without losing IDs or reading order.
-- Fixed Page Status and other Database Property edits reverting after some Profile upgrades; Store migration now rebuilds the complete Document and scheduled-Page projection bundle, validates it before readiness, and keeps pre-upgrade clipboard and Undo capabilities usable.
-- Fixed macOS launches appearing blank or unresponsive while a Profile opens or upgrades; the restored Nodex window now shows its branded, native-material startup state immediately and remains the same window through Workbench readiness or recoverable failure.
-- Fixed queued follow-ups disappearing or running after interruption: queues now survive restarts, pause atomically when a turn is stopped, preserve in-flight and failed rows for retry, resume in strict order, retain captured permission and service-tier choices when another window delivers them, and keep fresh steers independent from the existing queue.
-- Fixed follow-up messages losing retained model or collaboration instructions, ignoring personality changes, or replacing explicit setting resets when another window executes them.
-- Fixed chats and Side chats sometimes remaining on a loading screen after restoration completed or failed; renderer attachment now updates atomically, failures are explicit and retryable, and cached transcript content remains visible during recovery.
-- Fixed packaged macOS dictation failing before capture by aligning signed microphone capability, awaited TCC permission, and trusted audio-only Electron Session access.
-- Fixed retained Page editors crashing the renderer when table handles or another floating editor control survived a tab switch; mounted DOM capabilities and transient UI state now follow each EditorView attachment while document and undo state remain retained.
-- Fixed backup history and retention failing after an upgrade when a Profile contains cleanup receipts written by an earlier durable outcome format.
-- Fixed large, clean Profiles reopening slowly by reusing one single-use validation receipt after a graceful Core shutdown; interrupted, migrated, restored, or otherwise changed Stores still receive complete integrity validation before opening.
-- Fixed digit-leading Block titles without a shorthand separator being reported as malformed shorthand during Database promotion; authoring preview and Core promotion now use the same explicit boundary rules.
-- Fixed moving the final Block from Page Stage into Board or List failing or destabilizing the source editor; the move now completes atomically, leaves a blank editable Page, and can restore the exact original content with Undo.
-- PDF files now render natively inside Files with selectable text, safe links, page navigation, fit-width and percentage zoom, and bounded offscreen work instead of depending on Chromium's embedded PDF frame.
-- Fixed Core-backed views intermittently timing out during larger searches or maintenance; interactive work keeps reserved capacity, Full Page search avoids pathological SQLite query plans and preserves multi-term evidence, stale searches cancel silently end to end, and slow requests return typed Core outcomes instead of arbitrary transport failures.
-- Fixed background retention and automation work making the sidebar or Pages fail with Core deadlines on slower Macs; maintenance now yields in bounded slices, background work cannot starve interactive requests, the sidebar preserves its last known state during transient failures, and Page opens retry brief Core contention before asking the user to retry.
-- Hardened imported and pasted rich documents against resource exhaustion by bounding table dimensions and replacing backtracking Markdown block parsing with linear scans.
+- Terminal output failures no longer trigger runaway error reporting and memory exhaustion.
+
+- Existing Profiles open reliably after an upgrade and resume background cleanup while preserving saved document content.
+
+- macOS notifications wait for system authorization before sending, and Settings shows the current permission with an action to allow notifications or open System Settings.
+
+- Terminals retain startup events and release processes that exit before attachment completes.
+- Deleted Pages are cleared from local storage once their retention period ends instead of being kept indefinitely.
+- Retained edits that cannot be received can now be removed from this device after confirmation, clearing their warning without changing current documents.
+- Dictation recovers incomplete streams without duplicating completed segments, respects account availability and language settings, and preserves newer clipboard contents during global paste recovery.
+- Global dictation no longer disappears with service rollout changes. Voice retains global shortcut and dictionary settings, and its sound preference applies to both capture surfaces.
+
+### Security
+
+- Hardened rich-text paste, equations, diagrams, and configuration parsing against malicious input.
+
+### Removed
+
+- Intel Mac builds. macOS releases and automatic updates now support Apple Silicon only.
 ]]></description>
-            <enclosure url="https://github.com/junyudev/nodex/releases/download/v0.3.0/Nodex-0.3.0-arm64.zip" length="644865786" type="application/octet-stream" sparkle:edSignature="82klBFAKV28gcEdxZZeCICxJKft+1XkkpytvDqKk+JOyqvktSVeEDZ43dh9SdO/i979BZ+WNfWzrnVnt7QqSAQ=="/>
+            <enclosure url="https://github.com/junyudev/nodex/releases/download/v0.4.0/Nodex-0.4.0-arm64.zip" length="794695934" type="application/octet-stream" sparkle:edSignature="1CUfKK15hibmeFeIB0dblU2mEKJBEY1mQCG7Ols3mGC3sIaCRXm4hCsJl8qCqPMQyJhEJDZeKh6WyyuRJfb1CQ=="/>
         </item>
     </channel>
 </rss><!-- sparkle-signatures:
-edSignature: 16ixFwxMauJ1E6fZGyWjtRDsCMsUZ5gJRPIG6VtjUsxhOo5+0D8MT6i0XEgm7oWnWCOXPVPn/MgqaAPFm+/bBQ==
-length: 14702
+edSignature: ffm+LYRGYOxAGicsg98UFNR1GXUgxN8qhbCisCHnmv1vz7tatSf7jw9cKF5ejTa7HstIeTRlX/Vl+E6BllSpBA==
+length: 11859
 -->
