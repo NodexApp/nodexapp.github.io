@@ -3,6 +3,18 @@
     <channel>
         <title>Nodex</title>
         <item>
+            <title>0.4.1-nightly.20261028.1968</title>
+            <pubDate>Wed, 28 Oct 2026 07:33:38 GMT</pubDate>
+            <link>https://nodex.jyu.app/</link>
+            <sparkle:version>1.19.68</sparkle:version>
+            <sparkle:shortVersionString>0.4.1-nightly.20261028.1968</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>15.0.0</sparkle:minimumSystemVersion>
+            <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
+            <description sparkle:format="markdown"><![CDATA[Nightly build from `3ecec91e6507ddd5760c045402bffbd8ae1595c1`.
+]]></description>
+            <enclosure url="https://github.com/junyudev/nodex/releases/download/v0.4.1-nightly.20261028.1968/Nodex-0.4.1-nightly.20261028.1968-arm64.zip" length="812310925" type="application/octet-stream" sparkle:edSignature="ox9Xb5P6fM4rISwVhTKkoAM8dVjT6bsTK6D7r2xIDWzflGYlHI7crQeeD91Z302EP/mhJMRlfEdS5pYCl1YKBw=="/>
+        </item>
+        <item>
             <title>0.4.1-nightly.20261027.1900</title>
             <pubDate>Tue, 27 Oct 2026 08:55:50 GMT</pubDate>
             <link>https://nodex.jyu.app/</link>
@@ -10,9 +22,7 @@
             <sparkle:shortVersionString>0.4.1-nightly.20261027.1900</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>15.0.0</sparkle:minimumSystemVersion>
             <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
-            <description sparkle:format="markdown"><![CDATA[Nightly build from `4816c34cf85f4ae0122dd3761680dceaa8d1d8e1`.
-]]></description>
-            <enclosure url="https://github.com/junyudev/nodex/releases/download/v0.4.1-nightly.20261027.1900/Nodex-0.4.1-nightly.20261027.1900-arm64.zip" length="797069807" type="application/octet-stream" sparkle:edSignature="xV3m/kSxJiTMRnos5loY3X2W74ZKQZHdD3WhzbDhOe6j3AXAmn1N0GRsv88bYV8RCRTVmDhZdqMkJA9T7vfbDg=="/>
+            <enclosure url="https://github.com/junyudev/nodex/releases/download/v0.4.1-nightly.20261028.1968/Nodex-0.4.1-nightly.20261027.1900-arm64.zip" length="797069807" type="application/octet-stream" sparkle:edSignature="xV3m/kSxJiTMRnos5loY3X2W74ZKQZHdD3WhzbDhOe6j3AXAmn1N0GRsv88bYV8RCRTVmDhZdqMkJA9T7vfbDg=="/>
         </item>
         <item>
             <title>0.4.1-nightly.20261022.1679</title>
@@ -22,21 +32,11 @@
             <sparkle:shortVersionString>0.4.1-nightly.20261022.1679</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>15.0.0</sparkle:minimumSystemVersion>
             <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
-            <enclosure url="https://github.com/junyudev/nodex/releases/download/v0.4.1-nightly.20261027.1900/Nodex-0.4.1-nightly.20261022.1679-arm64.zip" length="794628338" type="application/octet-stream" sparkle:edSignature="4AfAgUJG9l1mYw18CMyTPweVjgLZnDPfds2bAZ1AcZMIxdgWzftOSseMHVJcAvOEwwAWx/UgUGI7DrRB3DSKAA=="/>
-        </item>
-        <item>
-            <title>0.3.1-nightly.20261022.1674</title>
-            <pubDate>Thu, 22 Oct 2026 09:27:36 GMT</pubDate>
-            <link>https://nodex.jyu.app/</link>
-            <sparkle:version>1.16.74</sparkle:version>
-            <sparkle:shortVersionString>0.3.1-nightly.20261022.1674</sparkle:shortVersionString>
-            <sparkle:minimumSystemVersion>15.0.0</sparkle:minimumSystemVersion>
-            <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
-            <enclosure url="https://github.com/junyudev/nodex/releases/download/v0.4.1-nightly.20261027.1900/Nodex-0.3.1-nightly.20261022.1674-arm64.zip" length="794623092" type="application/octet-stream" sparkle:edSignature="oHk/bGkygUwmuO6drlcPVBziqe7Ldf1Zp5Dbs494PtQy9YqY5k6RLX25VzscgkMjjDSxKG1Fc6SGhss0lBR7DQ=="/>
+            <enclosure url="https://github.com/junyudev/nodex/releases/download/v0.4.1-nightly.20261028.1968/Nodex-0.4.1-nightly.20261022.1679-arm64.zip" length="794628338" type="application/octet-stream" sparkle:edSignature="4AfAgUJG9l1mYw18CMyTPweVjgLZnDPfds2bAZ1AcZMIxdgWzftOSseMHVJcAvOEwwAWx/UgUGI7DrRB3DSKAA=="/>
         </item>
     </channel>
 </rss>
 <!-- sparkle-signatures:
-edSignature: JV4YHOZqlMHHYhggFChe1W6f/nrDXoyhV9vyS2RMo/kxzkNFSon9c+5MVTGCH5mTjkiTsIAvinmWlnVxwILaCw==
+edSignature: RDiBEDFaBNu5n84kmmi8WQxNm5syI9ep6TlW9HMr+mzgXHCrFcvLhb3p4gu+MFZyblDeryDmc0AgCE/Qx8ZbAA==
 length: 2804
 -->
