@@ -3,6 +3,114 @@
     <channel>
         <title>Nodex</title>
         <item>
+            <title>0.5.0</title>
+            <pubDate>Thu, 29 Oct 2026 11:16:46 GMT</pubDate>
+            <link>https://nodex.jyu.app/</link>
+            <sparkle:version>1.20.26</sparkle:version>
+            <sparkle:shortVersionString>0.5.0</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>15.0.0</sparkle:minimumSystemVersion>
+            <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
+            <description sparkle:format="markdown"><![CDATA[### Added
+
+- Scheduled tasks can ask in the Inbox before each run. The run waits as a message you can run, edit for that run, give another model, or skip. Tasks can also follow a Page as a runbook that every run reads and keeps current.
+- Scheduled templates can propose dependency updates for approval or send security findings to your Inbox.
+- Desktop context menus offer image and text actions, file and link destinations, diff commands, and editor clipboard actions. Save as uses a native destination dialog, including for remote files.
+- Every panel's `+` opens a New tab in one click, listing the tools it can become, local servers and your recent pages; whatever you pick opens right where the New tab was. Typing in its address bar suggests tools, open tabs and pages before searching the web. Right-click `+` for the full panel menu.
+- New page, in the New tab and panel menus, creates a page in Space and opens it beside your chat with its title ready to type, for quick drafts and notes.
+- The Files viewer previews videos and audio, with seeking, volume, playback speed, picture in picture and fullscreen, and explains when a file such as an archive or office document has no preview. Its header copies the file's path in the form you need, opens it on GitHub, and opens media and documents in the app made for them.
+- Files shows a text file's changes in place: pick Uncommitted, Unstaged, Staged, a commit or the branch to compare against, step between changes, switch between unified and split layouts, and keep editing while you compare. The file tree lists changed files above all files, with All changes opening Review, and the breadcrumb opens any folder's contents. Enable Git blame from the command palette to see who last changed the line you're on.
+- Agent questions keep unfinished answers across reopening and restart, support partial replies after work stops, and show readable answer history. Private responses stay hidden in copied and exported text.
+
+- macOS Appearance settings offer app-wide Font smoothing, enabled by default and synchronized across windows.
+- `/fast` and `/ultracode` toggle Fast and Ultracode from a Claude chat's composer, and Claude chats highlight the words Claude Code reacts to in a message, `ultrathink` and `ultracode`, with what each does for that turn.
+- Agents can find conversations by content, recover complete messages and activity through bounded continuations, continue chats with existing attachments, and follow exact Runs across restarts. Discovery stays in the calling Project unless Profile scope is explicit, permission limits apply to every send, and single-Run waits default to ten minutes with a one-hour maximum.
+- Plugins in the navigation rail opens Customize, where you can browse plugin marketplaces and installed skills, see what a plugin does and includes before installing it, install, enable, try or uninstall it, preview a skill's instructions, and start a chat from a starter prompt. Settings › Plugins switches installed plugins, connected apps and personal skills on or off, shows the tools each app gives Agents, adds, edits and signs in to MCP servers, and upgrades or removes the marketplaces you added.
+- Selected reply text can be added to a chat with optional numbered comments, or attached to an idle side chat without replacing its draft. Side chats inherit the current conversation and Agent settings across providers, use their first message as the title, keep their replies separate, and disappear when closed. Save as chat keeps a side conversation and its draft as an ordinary chat for later. References remain available in sent messages.
+- ACP Agents can be added from the ACP Registry or as a local command, each with its own launch settings and environment, and an optional separate account folder. Settings shows each Agent's live state and next step, installs and updates the exact build you reviewed, signs in through the Agent's own method (including an interactive terminal), and imports conversations the Agent saved. The model menu offers setup for Agents that aren't ready yet.
+- Codex and Claude Code conversations can be imported individually or in batches through one workflow, including by pasting a conversation ID or Codex thread link. Each copy retains its visible history and continues as a Nodex chat independently of the original, with a replacement working directory when needed. Setup migration stays separate.
+- Codex chats suggest a next message after a reply, even when you switch away. Accept a suggestion with Tab, Right Arrow or Enter, then edit or send it normally. Show predictions in General settings controls the feature across windows and restart.
+- Chats offer Fork in the sidebar context menu and Chat actions, with the current directory or a new Git worktree as the destination.
+- Clear a chat's context from Chat actions or with `/clear` to start fresh on any Agent without leaving the chat. Its panels, working directory, linked Pages and earlier messages stay; Agents just stop receiving what came before.
+- Claude subscription usage appears beside Codex at the foot of the navigation rail. Each account gets one ring for the limit that runs out first, and a card lists every window with its reset time and when Claude Code reported it. Readings refresh every five minutes while Agents are running and whenever a card opens, match across windows, and are labeled honestly when old, failed or missing. The card can also sign Claude Code out.
+- Sign in to an optional Nodex Account from Settings through your browser, while Nodex and your existing Codex and Claude sign-ins keep working without one.
+- A new chat suggested in the Inbox shows the Agent, model and effort it will start on when you hover its decision, apart from the Agent that wrote the suggestion. Its menu half, and Handle manually, can start that one chat on another model, effort or speed, or make the choice the default. The Inbox's settings gear changes the suggestion model and the model, effort and speed of every chat the Inbox starts, right in the Inbox.
+- Inbox suggestions choose the model for each new chat from what every model does well and how much of each Agent's weekly budget is left, and can plan the work: the chat's Agent hands separable parts, such as a backend behind a carefully designed UI, to economical models through Nodex. The plan shows beneath the suggestion before you confirm, and you can change any of its models or drop a part. Nodex's model guide ships with the app and your routing preferences take precedence over it.
+- A chat started from the Inbox opens with its message's Page beside it, so what it was started from stays in view while you follow the work. Settings → Inbox can turn this off.
+- A chat linked to a single Page shows that Page's status at the end of its sidebar row whenever the chat is idle and read, so you can see where each task stands without opening the board. Its hover card names the Page and opens it beside the chat.
+- An Inbox message whose work has already started elsewhere says so at the start of its text: its Page's Board status once it has left Triage, and the chats it is linked to with their live state, one click from opening them.
+- A chat can sit on either side of its tabs: Move to right pane or Move to left pane in Chat actions swaps them, and new chats follow your latest choice. In full view the chat becomes the first tab, with its own Chat actions, so you can switch between it and your tabs without leaving full view. `⇧⌘F` enters and exits full view.
+- Pages and messages are written in Nodex Markdown: GitHub Flavored Markdown, read the way GitHub reads a comment, with directives for toggles, Page references, mentions and the other Blocks Markdown has no word for. Agents fetch, patch and replace a Page in this one exact text without losing its Blocks' identities, and copying or exporting gives portable Markdown other apps read as written.
+- Images can sit within a line of text, as badges and icons do on GitHub, and open full size when clicked; an image on a line of its own stays an image Block.
+- Code blocks in chats and previews can wrap long lines, with the choice remembered across windows and restart.
+
+### Changed
+
+- Model menus set effort on one slider and offer Fast and Ultracode controls when the selected Agent supports them. Tooltips explain each mode, the model button shows active modes, and scheduled tasks choose their Agent and model separately.
+- New Pages, Databases, Canvases and copies appear at the top of Space Content instead of after everything else, so they stay visible without Show more.
+- Finished Claude Code, OpenCode and other Agent replies read like Codex ones: each Turn's work folds under `Worked for <time>`, leaving your prompt and the complete reply in view.
+- Command K brings chats, Pages, files, and full-text file search into one glass window, with host-aware folder and file-type filters, recent searches, exact match navigation, expandable results, and searchable Settings and themes.
+- Settings is easier to find your way around. Agents, Conversations and Hooks sit together under AI, and Agents lists Codex, Claude Code, OpenCode and other agents as short cards, each opening to its own setup. General is split into App, Chats, Writing, Files & links, Notifications, Privacy and Troubleshooting, with each update and sharing preference on its own row. Searching for a setting, in Settings or Command K, lands on its group or opens the right Agent's card, as does choosing Manage on a chat.
+- Messages are read with the same Markdown rules as Agent replies, the way GitHub reads a comment, so a message looks the same in its bubble, its Page and the chat that receives it.
+- Copying from a Page puts Markdown on the clipboard as plain text, so nested lists, images and formatting paste as written into Markdown editors, chat apps and Composers.
+- Plain text pasted into a Page gives each line its own Block. Text written in Markdown, such as an Agent's reply copied from a terminal, still becomes its headings, lists and formatting.
+- Codex reuses the user's native home, including configuration and hooks, without selecting a separate directory from Profile history. Changing the Codex home takes effect after restart; native conversations enter the sidebar only when explicitly imported.
+- Chats automatically load earlier messages as you scroll up, preserve your reading position, and offer retries beside any history that could not load. Imported conversations can be browsed beyond the previous history-window limit.
+- A message sent from the Inbox to a chat stays tied to that chat. Its Page shows the chat and its live status on its Board, List and Page, and its status moves from Triage to Build, Plan or Ship as the message is handled, without overriding a status you set yourself. History leads with work still in progress until you mark it done, and a decided message shows where it went before it folds away.
+- An Inbox opens a message's Page beside itself, so you can read or edit it without losing the stream. Opening the next message's Page replaces it until you start working in it.
+- The Library Inbox's Database appears in Space with the rest of your content. Like a Project's Database, it can't be archived while the Inbox depends on it, so earlier messages never end up in an archived copy.
+- Every Agent's thinking reads the same way in a chat and stays where it happened. While an Agent thinks, a one-line status shows a few lines of its latest thinking beneath it. Afterwards each thought folds into the work around it, or reads Thought for its duration on its own, and opens in full.
+
+### Removed
+
+- Removed runnable prompt sections from Pages. Their content and linked chats stay intact; use Send to chat for selected content or the whole Page.
+- Ultrathink is no longer offered as an effort level. Writing "ultrathink" in a Claude message still asks for deeper reasoning on that turn, and messages now reach Claude exactly as you wrote them.
+
+### Fixed
+
+- Stop now ends the background shells and monitors a Claude Code chat leaves running, instead of doing nothing, and Codex chats can stop a single background terminal. Every chat's summary lists its background work by name, with how long each task has run and its latest output, and stops one or all of them, in place of the composer's "Waiting for background tasks" line and terminal card. Stopping a delegated task also works when it is between replies, and restarting Nodex no longer adds an empty "Background activity updated" turn to chats whose background work it ended.
+- Finishing or cancelling a CLI command no longer closes Nodex and interrupts active chats. Desktop recovers interrupted Core connections without repeating chat dispatches, and fatal errors retain private diagnostic records with a readable incident reference.
+- Claude Code chats can keep their working directory while switching between a Project's Sources. Source changes and moves to another Project apply before the next message without interrupting background work.
+- Choosing Ultracode for a Claude chat now actually turns it on, at whatever effort you pick instead of forcing Extra High. When dynamic workflows are off for your Claude account, the toggle says so instead of silently doing nothing.
+- Changing a Claude chat's model, effort, Fast or Ultracode no longer restarts Claude Code, so it applies right away even while background agents, shells or workflows are running. If a change cannot be confirmed, retrying restores the complete choice before sending the next message.
+- The Composer context ring reports Claude Code, OpenCode and other Agents’ current usage, restores it when reopening a chat, and distinguishes unavailable readings from an empty context.
+
+- Space Content keeps its order when you open a Page, Database or Canvas, and every sidebar list remembers how far you expanded it with Show more after switching between Home and Space, reopening the window or relaunching.
+- Claude's thinking no longer turns into replies the moment a tool call starts, and long thinking no longer stretches past the edge of the chat.
+- Pasting into the chat or Inbox Composer keeps every line, and rich text from browsers, Notes, mail and documents pastes as its Markdown, keeping headings, emphasis, lists, links, code and tables.
+- Unread dots clear when you view a chat or its reply finishes in the foreground, without switching away and back. Manually marked unread chats stay unread until new activity or interaction.
+- Chat completion notifications include the Agent’s reply after execution ends and preserve readable content from Markdown, including code blocks.
+- Existing Profiles upgrade without rejecting saved paragraphs that begin with Markdown punctuation, while preserving their content and edit history.
+- Completed undo history no longer stalls background cleanup after a Profile upgrade.
+- Archiving or deleting an Inbox message withdraws its outdated suggestions so other messages keep receiving advice, including after restart.
+- Editing an earlier message across Agents removes the withdrawn context when continuing or switching Agents, including after restart. Forks retain the history they inherited without restoring messages withdrawn before the fork.
+- Chats distinguish automatic retries, recovery and terminal failures, retain error details for inspection, and let you continue a failed reply without replaying the original request.
+- Scrolling up in a chat keeps your reading position instead of reattaching to the bottom during layout updates.
+- Scrolling up right after sending a message moves the chat by the full mouse-wheel or trackpad distance, instead of a few pixels per notch while the space below your message shrinks.
+- Offline Profile backups work with Claude Code and OpenCode chats, preserve required Claude history, and ignore unrelated active Claude sessions.
+- Sidebar chats can be dragged into empty or collapsed Sections, including chats that have not started yet, with consistent destination feedback and reliable moves back to Projects, Chats and Pinned.
+- Images sent while steering a running chat remain visible with their message, including after activity is collapsed or the chat is reopened.
+- Codex tool calls retain their action titles, source icons and rich results, including JavaScript calls and image outputs.
+- Codex usage no longer disappears after a single failed refresh or a partial usage update; the last reading stays visible and says how old it is.
+- Long Claude Code, OpenCode and ACP chats show the message navigator beside the conversation, listing every message you sent with its reply preview, and jump to messages whose history has not loaded yet.
+- Claude Code and OpenCode slash menus retain supported chat actions, including Fork, Side, Merge back and Compact.
+- Forking a chat can continue from its latest eligible history without requiring a Git checkpoint, and Claude Code forks retain the selected Agent instance’s native history.
+- OpenCode chats offer editing of earlier messages, rewinding the conversation before continuing from the edit.
+- Image attachments follow the selected Agent model's capabilities, with a clear explanation when support is unavailable or not yet known.
+- Starting a chat from a Page or Scheduled uses its selected Agent and model, including when Codex is unavailable.
+- Codex subagent details load and retry their conversation history without a "Thread is not registered" error.
+- Code blocks in chat replies use dark-theme syntax colors in the dark theme, instead of near-invisible light-theme colors.
+- Context compaction in chats appears as a quiet activity row instead of a divider, says whether the compaction was manual or automatic, reassures you when a long compaction is still working, and no longer reports a stopped compaction as finished.
+- Inbox History shows the live status of chats run by Agent Runtime instead of leaving them at Starting.
+- File edits in Agent chats show each file's real line counts and diff instead of `+0 -0` and an empty preview. This covers edits that touch several files, created and deleted files, and edits from Codex, Claude Code, OpenCode and ACP Agents.
+
+### Security
+
+- Agent shells stay connected to their owning Profile when Nodex is launched from another Nodex Agent shell.
+- Updated the desktop runtime and content-processing dependencies to address certificate, sanitization, parsing and request-handling vulnerabilities.
+]]></description>
+            <enclosure url="https://github.com/junyudev/nodex/releases/download/v0.5.0/Nodex-0.5.0-arm64.zip" length="814237558" type="application/octet-stream" sparkle:edSignature="w6H0ZzSv3lYmy3rvS22fwx6+pI05tLN+/TGjLtQfMcfokkYIngY/AuDlfLRxjZaXx1VrTz1y2BnTwK7RQKFaDA=="/>
+        </item>
+        <item>
             <title>0.4.0</title>
             <pubDate>Thu, 22 Oct 2026 11:01:53 GMT</pubDate>
             <link>https://nodex.jyu.app/</link>
@@ -10,87 +118,11 @@
             <sparkle:shortVersionString>0.4.0</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>15.0.0</sparkle:minimumSystemVersion>
             <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
-            <description sparkle:format="markdown"><![CDATA[### Added
-
-- Home and Space separate chats and Projects from content browsing while remembering each destination. The navigation rail remains available with the sidebar hidden, and each split panel has an Open tabs chooser with live titles and counts.
-
-- An Inbox above New chat captures thoughts, todos and questions as Pages without first choosing a Project, and opens them as tabs beside itself. A suggestion Agent names messages and always proposes a concrete next step for confirmation, with exact targets and grouped scope visible. Drafts and confirmed inputs survive interrupted replies, edits preserve concurrent changes, and grouped filing has one atomic Undo. Busy chats receive confirmed messages into their own queue. Settings reuse available models while refreshing. Handled messages leave for History, and a message sent by mistake can be deleted for good. Agents and `nodex inbox send` can leave messages in the Inbox of the Project they work in. Messages are written in Markdown and can carry pasted, dropped or picked images, and the stream shows each message with its formatting and images. A message marked important stays within reach: while it is out of view, the Inbox points back to it with how long it has waited.
-
-- Appearance settings can choose UI, content and code fonts separately for light and dark themes, with independent UI, code and Page text sizes that stay consistent across windows and restart.
-
-- A started chat can continue on another Agent: choose another Agent's model and the next message carries the conversation so far to it, including in finished chats. Returning to an earlier Agent resumes its own conversation with only what it missed, and the transcript marks each handoff. Agents can do the same for another chat, and each model keeps the options last chosen for it.
-
-- A fork can merge its finished work back into the chat it came from with `/merge`; that chat's next message carries what the fork found, on whichever Agent it uses. Agents can merge forks they manage.
-
-- Codex and Claude chats can delegate work to each other, open each child's conversation, and receive results after the parent Turn ends. Delegated work, result delivery and cancellation survive runtime restart, while Profile snapshots preserve the complete execution history and native conversation identities.
-
-- Chats can use configured OpenCode models, including Kimi and OpenRouter providers, through the shared searchable model menu, with native options and questions. OpenCode is enabled by default, initially showing its `-free` models with other models available through Show all models. If OpenCode is missing, its official installer is available directly from the model menu and Settings. Independent profiles preserve model choices, and conversation history restores each prompt with its replies across restart and pagination.
-
-- Local tasks can use Claude Code with its existing login, configuration, skills and tools in the shared conversation UI, including images, native model and effort choices, questions, task details, steering, compaction, forks and session recovery. Chats can start in the Project folder or a managed worktree with the selected starting state and setup environment, then move between them while retaining the same native conversation and uncommitted changes. Existing CLI conversations can be connected to a Project or projectless chat and inspected through their native history. Separate profiles support environment variables, encrypted tokens and custom models. Application tools and scheduled tasks use the selected native profile.
-
-- Dictation streams into your draft by default, preserves edits when the cursor moves, and offers captured speech for recovery after an interruption. Streaming uses authenticated desktop connections with workspace and system-proxy routing, and performance details identify handshake rejections and timeouts.
-- Admitted Codex chats can start realtime voice with microphone and output mute controls. Calls stay active while switching chats within the same window and release their microphone when ended or cancelled.
-- Voice settings can manage an account dictionary when available.
-- Voice settings can transcribe a selected WebM file and retain its audio and text with recent recordings for copying or retrying.
-- Chats render interactive HTML responses with calendars, tooltips, tabs, carousels and icons in isolated widgets. Fullscreen viewing and switching chats within one window preserve the live document; saved selections recover when it is rebuilt, follow-ups can use saved model state, and authorized downloads and image copying are available. Authored adjustments can preview changes and send them with the next request.
-- Chats show created conversations as navigable results with reply previews. Opening them preserves the execution host and pending worktree identity; child conversations open in their parent context.
-- Assistant responses support expandable details and formulas written with slash delimiters or math code fences.
-- Suggested tasks prepare a focused draft in the source Project, ready for review and sending.
-- Message images can open in a separate read-only tab, copy their contents or web address, add an attachment to the chat, and download a copy.
-- MCP Apps in chat messages can add context to the draft and voice call while preserving updates that arrive during submission.
-- Files can preview remote text, Markdown, images and PDFs while preserving the source host when pinned or reopened.
-- Any earlier message in a chat can be edited, not only the latest. Sending the edit continues the conversation from the rewritten message with its images and attached context, replacing every later Turn while leaving files untouched. Local Codex and Claude chats now offer editing too, and an open edit keeps its draft while you scroll.
-
-### Changed
-
-- Database Pages show only the properties that have something to say. Empty properties wait behind one `N more properties` row and keep their place while you fill them in; **Always show** in a Database's Page layout pins a property that should always prompt for a value.
-- Pages open in one steady layout: properties appear as soon as the Page is selected, the title keeps its weight and line breaks, and the body fills in without a placeholder flash.
-- Markdown written with `*` or `+` bullets, `1)` numbers, lists nested with spaces, or tables with short `| - |` rules keeps its lists, nesting and tables in Pages, and a paragraph that merely starts like a list or heading stays a paragraph.
-- The messages you write in a chat show in the same message style as the Inbox: lines you wrote together stay together, bare links are clickable, and long messages collapse the same way.
-- An unsent chat draft keeps its images across a reload or restart, not only its text.
-
-- Scheduled has its own sidebar of upcoming tasks with search, status filters and task actions. Cron tasks open as folders of their runs, runs and Heartbeat chats open without leaving Scheduled, and tasks are created and edited in a focused dialog. A selected task reads as the conversation that set it up, with a reply box for follow-up questions.
-
-- The composer that floats over full-width content can be dragged to any corner or the bottom centre, resized from either edge, and minimized to a bubble that keeps its own corner. Its header with chat and location controls unfolds while you type, clicking it expands the latest reply above the prompt, and an unread reply appears as a card you can open or dismiss. Size and position are remembered.
-
-- A Project now opens on its own Inbox. Thoughts about the Project land there as Pages on its Board, suggestions stay inside the Project, and the sidebar counts what is waiting. The Board opens beside the Inbox as an ordinary tab, and `⌘⇧D` captures into the Inbox of the Project you are in.
-- Nodex starts faster by loading optional panels when opened, with a restart action if a view cannot load.
-
-- Agents can read and write all Projects, Pages and Library resources in the current Profile, including across Sessions and from background tasks. Native execution uses full access and automatically approves permission requests while retaining questions that need your input.
-
-- Long chats display bounded history while restoring execution, update streamed items independently, and give foreground history requests dedicated capacity. Persisted and live voice segments keep their native order alongside text; missing promoted content and failed item-history pages can be restored in place. Completed responses show their available outputs, and active voice work keeps its live status. Sending, expanding tools, and resizing the composer preserve the reading position; Find includes all assistant messages and retained voice text, with highlights restored as visible rows change.
-
-- Queued follow-ups show native and captured local messages together, with editing, ordering and delivery routed to each message's owner. Widget requests wait for the native queue to drain before submitting their confirmed context.
-
-- New Profiles reuse native Codex login, settings and skills by default, with safe directory switching, a shared native conversation chooser, and desktop tools scoped to each Nodex Profile. An independent account directory can change the active login after restart while retaining the same conversation history.
-- Nodex is now distributed under the Apache License 2.0.
-
-### Fixed
-
-- Terminal output failures no longer trigger runaway error reporting and memory exhaustion.
-
-- Existing Profiles open reliably after an upgrade and resume background cleanup while preserving saved document content.
-
-- macOS notifications wait for system authorization before sending, and Settings shows the current permission with an action to allow notifications or open System Settings.
-
-- Terminals retain startup events and release processes that exit before attachment completes.
-- Deleted Pages are cleared from local storage once their retention period ends instead of being kept indefinitely.
-- Retained edits that cannot be received can now be removed from this device after confirmation, clearing their warning without changing current documents.
-- Dictation recovers incomplete streams without duplicating completed segments, respects account availability and language settings, and preserves newer clipboard contents during global paste recovery.
-- Global dictation no longer disappears with service rollout changes. Voice retains global shortcut and dictionary settings, and its sound preference applies to both capture surfaces.
-
-### Security
-
-- Hardened rich-text paste, equations, diagrams, and configuration parsing against malicious input.
-
-### Removed
-
-- Intel Mac builds. macOS releases and automatic updates now support Apple Silicon only.
-]]></description>
-            <enclosure url="https://github.com/junyudev/nodex/releases/download/v0.4.0/Nodex-0.4.0-arm64.zip" length="794695934" type="application/octet-stream" sparkle:edSignature="1CUfKK15hibmeFeIB0dblU2mEKJBEY1mQCG7Ols3mGC3sIaCRXm4hCsJl8qCqPMQyJhEJDZeKh6WyyuRJfb1CQ=="/>
+            <enclosure url="https://github.com/junyudev/nodex/releases/download/v0.5.0/Nodex-0.4.0-arm64.zip" length="794695934" type="application/octet-stream" sparkle:edSignature="1CUfKK15hibmeFeIB0dblU2mEKJBEY1mQCG7Ols3mGC3sIaCRXm4hCsJl8qCqPMQyJhEJDZeKh6WyyuRJfb1CQ=="/>
         </item>
     </channel>
-</rss><!-- sparkle-signatures:
-edSignature: ffm+LYRGYOxAGicsg98UFNR1GXUgxN8qhbCisCHnmv1vz7tatSf7jw9cKF5ejTa7HstIeTRlX/Vl+E6BllSpBA==
-length: 11859
+</rss>
+<!-- sparkle-signatures:
+edSignature: 8hD/SxsLTF6SshYtgyZakeX16p2cFRV4r170r7BiQ46LiYTclXyYiUDZbWKh7/rX+4xnInOdtZJv5TXDpcwdCg==
+length: 20254
 -->
