@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xmlns:sparkle="http://www.andymatuschak.org/xml-namespaces/sparkle"><channel><title>Nodex</title><link>https://nodex.jyu.app/</link><item><title>Nodex 0.5.1-nightly.20261103.2253</title><sparkle:version xmlns:sparkle="http://www.andymatuschak.org/xml-namespaces/sparkle">1.22.53</sparkle:version><sparkle:shortVersionString xmlns:sparkle="http://www.andymatuschak.org/xml-namespaces/sparkle">0.5.1-nightly.20261103.2253</sparkle:shortVersionString><pubDate>Tue, 03 Nov 2026 13:49:44 GMT</pubDate><description>Nightly build from `7981884635a0933fb38bfddc6ad563ea652d5e99`.
+</description><enclosure url="https://github.com/junyudev/nodex/releases/download/v0.5.1-nightly.20261103.2253/Nodex-0.5.1-nightly.20261103.2253-windows-x64.exe" length="524410446" type="application/octet-stream" xmlns:sparkle="http://www.andymatuschak.org/xml-namespaces/sparkle" sparkle:os="windows" sparkle:edSignature="XFNTJsRfxj8W9guzniq4gk8REQGkQZogz6lN+wnflzql1ekCR07nzBRe0Go3h4Ej3Xei07+IgA4Ug5IdZtgNAg=="/></item></channel></rss>
+<!-- sparkle-signatures:
+edSignature: asJoE27jrAC+Miga+p71PG3HvNLw86u6t8KGmbchHgve0kqzZeVWGFc2Fn8hpDR8w+JPtQIzBIo9nfBMh+ENAw==
+length: 1068
+-->
