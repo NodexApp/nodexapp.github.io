@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0" xmlns:sparkle="http://www.andymatuschak.org/xml-namespaces/sparkle"><channel><title>Nodex</title><link>https://nodex.jyu.app/</link><item><title>Nodex 0.5.2-nightly.20261105.2307</title><sparkle:version xmlns:sparkle="http://www.andymatuschak.org/xml-namespaces/sparkle">1.23.7</sparkle:version><sparkle:shortVersionString xmlns:sparkle="http://www.andymatuschak.org/xml-namespaces/sparkle">0.5.2-nightly.20261105.2307</sparkle:shortVersionString><pubDate>Thu, 05 Nov 2026 02:50:48 GMT</pubDate><description>Nightly build from `15887fcaeee51b7300ebffd4dd61d17329e45970`.
-</description><enclosure url="https://github.com/junyudev/nodex/releases/download/v0.5.2-nightly.20261105.2307/Nodex-0.5.2-nightly.20261105.2307-windows-arm64.exe" length="378315410" type="application/octet-stream" xmlns:sparkle="http://www.andymatuschak.org/xml-namespaces/sparkle" sparkle:os="windows" sparkle:edSignature="FQWbxm8hNs2z6NULBeFxl+n1Tub/SyeHGZ60z1VxoXQZBuOLxr8u4ra12UTTgvvz0ptKCOp+GGjhUPCGtetuCQ=="/></item></channel></rss>
+<rss version="2.0" xmlns:sparkle="http://www.andymatuschak.org/xml-namespaces/sparkle"><channel><title>Nodex</title><link>https://nodex.jyu.app/</link><item><title>Nodex 0.5.2-nightly.20261105.2312</title><sparkle:version xmlns:sparkle="http://www.andymatuschak.org/xml-namespaces/sparkle">1.23.12</sparkle:version><sparkle:shortVersionString xmlns:sparkle="http://www.andymatuschak.org/xml-namespaces/sparkle">0.5.2-nightly.20261105.2312</sparkle:shortVersionString><pubDate>Thu, 05 Nov 2026 04:54:56 GMT</pubDate><description>Nightly build from `f1661e8c05b2e5d04017d911eebfe86f1f886a55`.
+</description><enclosure url="https://github.com/junyudev/nodex/releases/download/v0.5.2-nightly.20261105.2312/Nodex-0.5.2-nightly.20261105.2312-windows-arm64.exe" length="378402856" type="application/octet-stream" xmlns:sparkle="http://www.andymatuschak.org/xml-namespaces/sparkle" sparkle:os="windows" sparkle:edSignature="oeVmkQKOw04L14LGXiQRhRDzY01W51xeFDtOGWlmK+YjwMIlb85dmd5P8CRFx0Z5H7dio5adWYC5jAI+wl0dDA=="/></item></channel></rss>
 <!-- sparkle-signatures:
-edSignature: eLeGAU40LSJOnMk0HZ04Oa88SeTSqvTk/hcyQQwhDBBVEg/jF45b206UExAowLTYMvzDm58kLpdt8DD03C7LBQ==
-length: 1069
+edSignature: u9CqhmCKslo1vukr3caKtrTyrQP+Rvdd2XgZ4Ah7hmdRGwMhLBzTyqLlRw7DXzMrD5o0YIPvSXGVHvsmI75kBg==
+length: 1070
 -->
