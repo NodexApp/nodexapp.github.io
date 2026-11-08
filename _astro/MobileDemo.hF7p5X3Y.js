@@ -1,0 +1,1 @@
+export{n as SCRIPT,t as default}from"./MobileDemo.9wSC72DR.js";
