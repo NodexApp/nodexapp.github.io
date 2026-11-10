@@ -1,0 +1,1 @@
+export{n as SCRIPT,t as default}from"./MobileDemo.MohkId2V.js";
