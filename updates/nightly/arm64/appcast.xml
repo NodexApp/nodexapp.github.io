@@ -3,26 +3,26 @@
     <channel>
         <title>Nodex</title>
         <item>
-            <title>0.5.5-nightly.20261110.2523</title>
-            <pubDate>Tue, 10 Nov 2026 23:57:06 GMT</pubDate>
+            <title>0.5.5-nightly.20261111.2524</title>
+            <pubDate>Wed, 11 Nov 2026 02:36:58 GMT</pubDate>
             <link>https://nodex.jyu.app/</link>
-            <sparkle:version>1.25.23</sparkle:version>
-            <sparkle:shortVersionString>0.5.5-nightly.20261110.2523</sparkle:shortVersionString>
+            <sparkle:version>1.25.24</sparkle:version>
+            <sparkle:shortVersionString>0.5.5-nightly.20261111.2524</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>15.0.0</sparkle:minimumSystemVersion>
             <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
-            <description sparkle:format="markdown"><![CDATA[Nightly build from `c9acb79755f0ce227bdec537841da69d7a088f2a`.
+            <description sparkle:format="markdown"><![CDATA[Nightly build from `38b54a14a13edf9d26c334a6681d9e9d0ea04c02`.
 ]]></description>
-            <enclosure url="https://github.com/junyudev/nodex/releases/download/v0.5.5-nightly.20261110.2523/Nodex-0.5.5-nightly.20261110.2523-arm64.tar.xz" length="497817300" type="application/octet-stream" sparkle:edSignature="4HPXozQz2n71tfKSzDeNSFhLO0f2G8shEkMsyUtRh66WE6xYpZBKZ7cHw0QJPYAw6F7arTRUAP5VB86cFnoWBA=="/>
+            <enclosure url="https://github.com/junyudev/nodex/releases/download/v0.5.5-nightly.20261111.2524/Nodex-0.5.5-nightly.20261111.2524-arm64.tar.xz" length="497866288" type="application/octet-stream" sparkle:edSignature="vtTIM/anwAglFuAUx/N9hNhsJqvpoVfBiTvxe61DYMZzvBO8tWl+inbjl7CHn0j1OAEqc3fzVxSUf+KeEXDWDA=="/>
             <sparkle:deltas>
-                <enclosure url="https://github.com/junyudev/nodex/releases/download/v0.5.5-nightly.20261110.2523/Nodex-0.5.4-nightly.20261110.2518-to-0.5.5-nightly.20261110.2523-arm64.delta" sparkle:deltaFrom="1.25.18" length="3196646" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="977808" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="pJNwvVlP8o0OlFSmaJ6jG2BbQ+1Ogn1wl450+SAEmFObFgqtfqGur/6tXNQco0b8dBdoB97hr2fxdlH7gr+pAw=="/>
-                <enclosure url="https://github.com/junyudev/nodex/releases/download/v0.5.5-nightly.20261110.2523/Nodex-0.5.4-nightly.20261110.2508-to-0.5.5-nightly.20261110.2523-arm64.delta" sparkle:deltaFrom="1.25.8" length="7830242" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="977808" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="BwIGb90f0KGdNUteBvjIxG3I80U8L3jAgcJ6B+Gj6VrAGtXkYjNkLd8Te0b2ucJ42sJi/kz1K6PHD0z34pWbCQ=="/>
-                <enclosure url="https://github.com/junyudev/nodex/releases/download/v0.5.5-nightly.20261110.2523/Nodex-0.5.4-nightly.20261110.2494-to-0.5.5-nightly.20261110.2523-arm64.delta" sparkle:deltaFrom="1.24.94" length="9410834" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="977808" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="hm5ZS1B5tD64MxxvBwgi1qg6pmoj9ZirOzCO7KbyXbpTUdM+Bwano9Al3VZ3BpRz80W7/GNJlja0fYyqnEK7CA=="/>
-                <enclosure url="https://github.com/junyudev/nodex/releases/download/v0.5.5-nightly.20261110.2523/Nodex-0.5.4-nightly.20261108.2420-to-0.5.5-nightly.20261110.2523-arm64.delta" sparkle:deltaFrom="1.24.20" length="70047966" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="977808" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="Hw3S3fetxhFAmgShxze77yOD9cKuh/pZiFj8niPfJHMDWoyd69ugMX1PKN9fp5cvhZMcWcQ/It43DHpCenf0BA=="/>
-                <enclosure url="https://github.com/junyudev/nodex/releases/download/v0.5.5-nightly.20261110.2523/Nodex-0.5.2-nightly.20261108.2398-to-0.5.5-nightly.20261110.2523-arm64.delta" sparkle:deltaFrom="1.23.98" length="70093302" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="977808" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="7yc6grKeO8dRqnIUVtRnOplfzviC1sJWQ9Kd1JHYBSYEY2fBGDvVcJa461y1w2TKtPPoxLXCFEZ0SOYSJf4+Ag=="/>
+                <enclosure url="https://github.com/junyudev/nodex/releases/download/v0.5.5-nightly.20261111.2524/Nodex-0.5.5-nightly.20261110.2523-to-0.5.5-nightly.20261111.2524-arm64.delta" sparkle:deltaFrom="1.25.23" length="1402466" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="977808" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="jX/yGW1tyAFTGw1MkyCasjAmt0/alETQ56zoUG6J6Kx6OeX0Nds3m49BxjzLqGjJbsWkfJR0khIZnrHyTUO+Bg=="/>
+                <enclosure url="https://github.com/junyudev/nodex/releases/download/v0.5.5-nightly.20261111.2524/Nodex-0.5.4-nightly.20261110.2518-to-0.5.5-nightly.20261111.2524-arm64.delta" sparkle:deltaFrom="1.25.18" length="3275814" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="977808" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="RtJtbIC1dXI8Uci1STGN0+4vMKmuwF/0JBdNG3FPiY/toVptIFYymcVIQvxGbVyYivCPbIELr4mHS/xlsm+EBg=="/>
+                <enclosure url="https://github.com/junyudev/nodex/releases/download/v0.5.5-nightly.20261111.2524/Nodex-0.5.4-nightly.20261110.2508-to-0.5.5-nightly.20261111.2524-arm64.delta" sparkle:deltaFrom="1.25.8" length="7854358" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="977808" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="hg/pkAyH0hnqoCsRhEdRySWQFHZsgNcQf4JXct+61WYrYLa9yCrqS9zhs9hmnOttqq4pmgdLtc9UVbe6B052Cw=="/>
+                <enclosure url="https://github.com/junyudev/nodex/releases/download/v0.5.5-nightly.20261111.2524/Nodex-0.5.4-nightly.20261110.2494-to-0.5.5-nightly.20261111.2524-arm64.delta" sparkle:deltaFrom="1.24.94" length="9430542" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="977808" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="DqgPD874vre6gmPcOZ8Uoy+8czh02dj5HSpCIdAQiJJbYqf86FwlHOJpxKMtv4XUxTK3GA4nuCnLnIciEM2ZCA=="/>
+                <enclosure url="https://github.com/junyudev/nodex/releases/download/v0.5.5-nightly.20261111.2524/Nodex-0.5.4-nightly.20261108.2420-to-0.5.5-nightly.20261111.2524-arm64.delta" sparkle:deltaFrom="1.24.20" length="70050370" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="977808" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="hghwEv2U8SUs3tgVEGi9PewQjNSc/0Nx427ZvKFqX2WXQOFI0RiKcjAasK+LQOBZxgv028szD3sJaiJnDQChDA=="/>
             </sparkle:deltas>
         </item>
     </channel>
 </rss><!-- sparkle-signatures:
-edSignature: wHG5+UhXWLJ96RCZILh+E2DAZN82QIp7+fbbodedsGZAK6REpuXwd+NW+td8GbfyQWJJJtmMRuzq+Fh0f3H9Cw==
-length: 3639
+edSignature: llw8wCE7BKNIUX/vR0IWqdy8F4lP6B66ilwoFtSywRp2K8cPreSmjOPFH47xUBZ6EKJmL9ycAWmGcAnosDUVDQ==
+length: 3638
 -->
