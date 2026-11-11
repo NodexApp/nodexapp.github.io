@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0" xmlns:sparkle="http://www.andymatuschak.org/xml-namespaces/sparkle"><channel><title>Nodex</title><link>https://nodex.jyu.app/</link><item><title>Nodex 0.5.5-nightly.20261111.2524</title><sparkle:version xmlns:sparkle="http://www.andymatuschak.org/xml-namespaces/sparkle">1.25.24</sparkle:version><sparkle:shortVersionString xmlns:sparkle="http://www.andymatuschak.org/xml-namespaces/sparkle">0.5.5-nightly.20261111.2524</sparkle:shortVersionString><pubDate>Wed, 11 Nov 2026 02:36:58 GMT</pubDate><description>Nightly build from `38b54a14a13edf9d26c334a6681d9e9d0ea04c02`.
-</description><enclosure url="https://github.com/junyudev/nodex/releases/download/v0.5.5-nightly.20261111.2524/Nodex-0.5.5-nightly.20261111.2524-windows-x64.exe" length="423192185" type="application/octet-stream" xmlns:sparkle="http://www.andymatuschak.org/xml-namespaces/sparkle" sparkle:os="windows" sparkle:edSignature="Ob3Wr6VFAp8Knc6DQuUh1CAeyEuRMX2aMwLrRAbHet0Ce0uG6pmVrrObVEe0wfpmxFArl2QUCWhpD++qDJMuDw=="/></item></channel></rss>
+<rss version="2.0" xmlns:sparkle="http://www.andymatuschak.org/xml-namespaces/sparkle"><channel><title>Nodex</title><link>https://nodex.jyu.app/</link><item><title>Nodex 0.5.6</title><sparkle:version xmlns:sparkle="http://www.andymatuschak.org/xml-namespaces/sparkle">1.25.45</sparkle:version><sparkle:shortVersionString xmlns:sparkle="http://www.andymatuschak.org/xml-namespaces/sparkle">0.5.6</sparkle:shortVersionString><pubDate>Wed, 11 Nov 2026 10:14:58 GMT</pubDate><description>Build from `47c7f7b20230071b3f0a83eab9eee2d17ace360f`.
+</description><enclosure url="https://github.com/junyudev/nodex/releases/download/v0.5.6-nightly.20261111.2545/Nodex-0.5.6-windows-x64.exe" length="423710307" type="application/octet-stream" xmlns:sparkle="http://www.andymatuschak.org/xml-namespaces/sparkle" sparkle:os="windows" sparkle:edSignature="NmIyU5AXgiHt0rYoEXKDTeaOmnV9ChlRhrwxbOn7qX5CGGLAUJItq5u0rTiGkK29Uzj2vEXQMHHBrhQOXwHeBg=="/></item></channel></rss>
 <!-- sparkle-signatures:
-edSignature: mmqbOHmuFxJargljBvPuq95NJp7JzjbGGhThPf45JDNRwqheavq+wHpPdpRIJv5lK3ePBdeU4545LdG7Wb9dBw==
-length: 1068
+edSignature: aXCBcnIUdFeBp2Tct0utimoPYTjxDNa7E8taXXUzJSmbUIFx7x9u9BEeiSF7tvgFSd3HfdIHAQ2GARulJsC7Bw==
+length: 994
 -->
