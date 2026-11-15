@@ -4,22 +4,18 @@
         <title>Nodex</title>
         <item>
             <title>0.5.6</title>
-            <pubDate>Thu, 12 Nov 2026 10:33:27 GMT</pubDate>
+            <pubDate>Sun, 15 Nov 2026 14:13:08 GMT</pubDate>
             <link>https://nodex.jyu.app/</link>
-            <sparkle:version>1.26.11</sparkle:version>
+            <sparkle:version>1.27.8</sparkle:version>
             <sparkle:shortVersionString>0.5.6</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>15.0.0</sparkle:minimumSystemVersion>
             <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
-            <description sparkle:format="markdown"><![CDATA[Build from `f650efd1c608150b1243f8f0601029580d7ea466`.
+            <description sparkle:format="markdown"><![CDATA[Build from `d13a65550550331832360d5701041d1da560b1d9`.
 ]]></description>
-            <enclosure url="https://github.com/junyudev/nodex/releases/download/v0.5.6-nightly.20261112.2611/Nodex-0.5.6-arm64.tar.xz" length="498927400" type="application/octet-stream" sparkle:edSignature="bSQb9mlgE98U1SFweY+pKX1/6dOnPto8wF6qzusF+K1sPevnWK1tuIC5FK/pRwlaon8YERqiD+Z1v1l6dkL7CA=="/>
-            <sparkle:deltas>
-                <enclosure url="https://github.com/junyudev/nodex/releases/download/v0.5.6-nightly.20261112.2611/Nodex-1.25.45-to-0.5.6-arm64.delta" sparkle:deltaFrom="1.25.45" length="10317610" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="977808" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="pg6PjUfYHqvUbuHnQ7oLFo8Bmfzzw1OR40sqoa1xUBsk3VZ5QOMwt9nBxlUn3NNVSQqpSozApr7KK1SM8qBkCg=="/>
-                <enclosure url="https://github.com/junyudev/nodex/releases/download/v0.5.6-nightly.20261112.2611/Nodex-1.25.24-to-0.5.6-arm64.delta" sparkle:deltaFrom="1.25.24" length="10676766" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="977808" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="n4p+Q0iHBZqcjRgevuY9AUOuYclTnRjxOvV4qUsT3Ejh+pa7pPOTftKtJgwMDB+4fyXFVhS69ji7wzlAGKd+CA=="/>
-            </sparkle:deltas>
+            <enclosure url="https://github.com/junyudev/nodex/releases/download/v0.5.6-nightly.20261115.2708/Nodex-0.5.6-arm64.tar.xz" length="511675312" type="application/octet-stream" sparkle:edSignature="GQQHwQjHbEiXBpSEMvmQfcJNAMUiXW9f2H5YgWpOrbUHuPdo26gKQw1e3+Ah5nzxxwV4UeMzdOIzxm2OKhCpDw=="/>
         </item>
     </channel>
 </rss><!-- sparkle-signatures:
-edSignature: 0WfxJe3vA8ZRhaCWIE+uv6cfgnvBor+7OWjx02ttogYq80u/MAQWTHAcf7xTMPXPDhKPdraI87CHGhfm+12ACw==
-length: 2030
+edSignature: 68nWDe37j38heN1LPWOE5vFrd4OGhMsry9tGQ96CsjUaakjoRA++MgNieEjI7TjTf7mimFteYvH4g6qe5xckDQ==
+length: 1084
 -->
