@@ -3,73 +3,28 @@
     <channel>
         <title>Nodex</title>
         <item>
-            <title>0.5.6</title>
-            <pubDate>Sun, 15 Nov 2026 14:13:08 GMT</pubDate>
+            <title>0.5.7</title>
+            <pubDate>Mon, 16 Nov 2026 19:34:44 GMT</pubDate>
             <link>https://nodex.jyu.app/</link>
-            <sparkle:version>1.27.8</sparkle:version>
-            <sparkle:shortVersionString>0.5.6</sparkle:shortVersionString>
+            <sparkle:version>1.27.29</sparkle:version>
+            <sparkle:shortVersionString>0.5.7</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>15.0.0</sparkle:minimumSystemVersion>
             <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
             <description sparkle:format="markdown"><![CDATA[### Added
-- Plugins work in every Agent chat. A plugin installed in Customize → Plugins reaches Codex natively, and Nodex brings its skills and the MCP servers it can run to Claude Code and ACP Agents. Limit a plugin to chosen Projects from its page; servers that need a sign-in, connected apps and hooks stay in Codex, and the plugin's page says so.
-- Add a plugin from any folder. Customize → Plugins → Add → Plugin from folder shows what the folder contains before installing it, and Update from folder picks up later changes.
-- Open plugin apps from the navigation rail, beside a chat, or in a read-only viewer for supported workspace files.
-- Read and edit the instructions Agents receive in **Settings > Agents**. **Full Nodex instructions** shows the guidance every chat gets, and **Your instructions** lets you add standing instructions for all of your chats. **Artifact opening** chooses whether Agents open artifacts beside the chat on their own, ask first, or never.
-- Type `@Nodex` to turn the block you are writing into a Prompt for Nodex. The `@` menu offers Nodex first, and the block keeps its text and child blocks, so `⌘↵` sends it to the chat beside the Page.
-- Choose whether a new chat from your Inbox works in a worktree. **New chats use a worktree** in Inbox settings sets the default, and the dispatch editor shows **Worktree** or **Local** beside the chat's Agent so each message can choose its own. A chat that runs in your checkout stays linked to its message's Page.
-- Set anything in your Inbox aside with **Later** when it can wait. Choose a time and the message or the work waiting on you leaves your Inbox, then comes back with a notification when that time arrives; if it needs you for a new reason before then, it shows at once. The new Later view lists everything you set aside in the order it returns, and Nodex can suggest Later for a message that says when the work should wait until. It works on the phone too.
-- Share to Nodex from other apps on your phone. Nodex now appears when you share a photo, a link, a web page or text on iPhone and Android, and what you share opens in your Inbox Composer, ready to send or to add a note to first. On iPhone, the share sheet also offers **Add to Nodex Inbox** among its actions.
-- Choose how hard a model reasons from your phone. The Agent chip in Nodex Mobile's Composer now names the model and its reasoning effort, and its sheet lists the efforts that model offers, for a new chat or one started from an Inbox message. In an open chat the Composer shows the effort in force and changes it from your next message on.
-- Save a thought that asks for no work with **Save to Notes**. Each Project, and the Inbox itself, gets a Notes page; a saved message becomes a page beneath it, off the Board, where you can arrange notes into sections. Nodex suggests it for references and can file a note under a section you already have.
-- Agents can set properties on many Pages in one step. Ask a chat to mark a batch of cards Done or re-prioritize a Board and it commits the whole change together and reports each card's resulting values, instead of editing cards one at a time. On the command line, `nodex page properties set NODEX-4 NODEX-8 --set Status=done --set Priority=p1-high` does the same, `nodex page create` takes `--set`, and `nodex page move` moves several Pages at once.
-- Agents running locally on Windows can use Nodex’s in-app Browser, with the same site access approvals as on macOS.
-- Computer Use can control desktop apps on Windows. Manage availability and saved app approvals in Computer use settings.
-- A Page's toolbar now holds the tools for writing it. **Text style**, **Image**, **Table**, and **Insert** sit beside the Page's menu and act where your caret is, and **Insert** lists every Block with a short description. The Page menu gathers Rename, Copy, **Download as Markdown**, **Open on right**, and **Open in new window** with the Page's view options, and **Copy link** has its own button.
-- Start an empty Page from a shape. A new Page offers **Task brief**, **Bug report**, **To-do list**, and **Meeting notes** under its first line; choosing one writes its headings and puts your caret where to begin.
+- Send a Browser annotation straight to the Agent. In the annotation editor, ⌘↵ sends the note as its own message, steering a working Agent or queueing as a typed message would, and leaves what you were typing in the chat alone; **Quick annotate** in a page's context menu sends on Enter. The Browser toolbar sends every saved annotation at once, ⌘⇧. turns annotating on and off, and holding Space lets you use the page without leaving it.
 
 ### Changed
-- Alerts and confirmations from a web page now appear inside its Browser tab. They name the site that asked, leave the rest of Nodex usable, and stop taking the keyboard from the chat you are typing in. A page that keeps opening them can be told to stop, and an Agent working in the page answers them itself.
-- A message you send from your phone while an Agent is working now redirects it right away, as sending from the desktop does. Nodex Mobile used to queue it behind the Run unless you knew to press and hold send; now holding send is what queues it, and the Composer says so.
-- The Inbox and the Board now agree about every message. A message waits in your Inbox while its card is in Triage and yours to decide, so moving the card on the Board handles it, and moving it back to Triage brings it back. **Keep** is now **Add to Todo**, and a card appears in the Inbox once, whether it waits to be routed or needs your answer or review. In a shared Space, each person's Inbox shows the messages they own.
-- Stable updates reach you sooner with the same build already tested on Nightly. Both channels show app versions as `x.y.z`, and you can choose your channel in Settings.
-- Opening `N more properties` on a Page now lists its empty properties by name instead of a column of rows that say Empty. Choose one and it joins the list with its editor already open, and it stays there while the Page is open. Hidden properties that hold a value still open as rows.
-- The built-in Parent property is now called **Part of**, so a Page under another reads "Part of" followed by that Page. A property you renamed keeps your name. Part of and Waits for also have their own icons.
-- Clicking an image in a Page's Files, or an image attachment in its body, now shows it over the Page instead of opening a tab. Step through the Page's images with the arrow keys, and choose **Open in tab** when you want to keep one open; Cmd/Ctrl-click still opens the tab directly.
-- A Page's Files now hang beneath the Files property as an outline instead of sitting in a frame of their own. Folders and Files are indented under the **Files** label, which folds and unfolds them, and pointing at a File adds Save and its menu beside its size. Files the Page body already shows start folded, and you can drop files from your computer onto the property to add them. Property icons also line up with the Page's title, and every value starts on one edge.
-- Images without a filename of their own get readable names. A screenshot pasted from the clipboard is now called `Pasted image.png`, and other unnamed images `Image.png`, instead of a long identifier, in a Page's Files, the Library and chats. Images that come with a real filename keep it, and Files you already have keep their names.
-- Nodex tells you when a chat finishes while you are reading another one. Turn completion notifications used to stay silent whenever a Nodex window was focused, so an Automation's run or a second chat could finish unnoticed. Now only the chat in front of you stays quiet by default. Settings offers this as **When the chat isn't in view**; choose **When Nodex is in the background** to keep banners away while a Nodex window is focused.
-- Heartbeat chats read like conversations. A heartbeat's message shows its instructions and names the Automation that sent it, and the Agent's reply shows what it wrote, without the surrounding markup. Checks that found nothing to report fold into a single **Quiet check** line, and a run of them shares one line with their count and latest result; expand it to see any check in full.
-- Agents run `nodex` directly in their shells. Nodex resolves who is asking each time the command runs, so a script an Agent wrote in an earlier turn keeps working after Nodex restarts, and its changes stay credited to the chat that made them. `nodex context` shows who the command is acting as and which Space and Project it targets, and a refused command says why and what to do next.
-- A retry key can be any text up to 128 characters, in chats and with `--idempotency-key`. Reuse a key with the same request to retry a call whose result you did not see; Nodex remembers it for seven days.
-- Command line results are short. A write reports what changed on each Page, with the values before and after, and leaves out internal detail.
+- Browser annotations stay on the page until they reach the Agent. A saved annotation used to leave nothing behind but a small tag in the chat, and was lost if its screenshot failed or the Browser had no chat beside it. Each one is now a numbered pin you can reopen, edit or remove; it is kept when you leave annotating, switch tabs or lose the screenshot; and a Project's Browser sends to its Agent Dock. Pins follow text, elements inside frames and scrolling areas, and the Agent is told exactly what each one points at.
 
 ### Fixed
-- Sending a message while an Agent is working in the Browser no longer makes it start over. The message used to wipe the Agent's script session, so it lost its connection to the Browser and had to find its pages again. The session now stays as it was, and whatever the Agent was doing finishes first; Stop still ends it immediately.
-- An Agent reloading a page in the Browser no longer reloads all of Nodex. The whole window used to start over, which interrupted the chat you were reading and closed every Browser tab, losing anything unsaved in them. Only the Agent's page reloads now.
-- Links that open a new tab work in the built-in Browser. Clicking one did nothing, and neither did ⌘-click, middle-click or a page opening a window itself. They now open a tab right beside the page, in the background for ⌘-click and middle-click, including from a page you are not looking at. Mail and phone links that ask for a new tab open their app, and a tab opened only to download a file closes once the download finishes.
-- A page with unsaved changes asks before you leave it. Following a link, reloading or entering another address did nothing on such a page; Nodex now asks **Leave site?**, and a page an Agent is working in moves on without asking.
-- The Browser stays idle with several tabs open. With two or more live tabs Nodex re-sent their state many times a second, which used the processor continuously and could leave a new tab titled “Browser”. Background tabs now also show their page's title as soon as it loads.
-- Claude Code chats in Full access no longer stall on a safety check while you are away. Claude Code still asks before a command whose removals it cannot verify, even a harmless script, and the request used to wait for you indefinitely. It now waits two minutes and shows that deadline; if no one answers, the command is declined, the Agent rewrites it safely or leaves the removal to you, and the turn carries on.
-- Starting a chat no longer fails with **Request declined** while Nodex is busy in the background. Automatic work such as Inbox routing, scheduled work, and syncing now waits behind what you are doing, and a brief busy moment is retried instead of ending the turn.
-- Claude Code chats honor the selected model when an older version is turned off. If Claude Code cannot apply the selection, the chat explains why the message was held. If Claude Code changes models during a reply, the chat names the model it used.
-- A follow-up sent to a delegated task while it is still working now wakes the Agent that sent it. Before, a follow-up queued behind the task's unfinished work could complete without ever reporting back, and the reply named the task that had not run it. Each follow-up now gets its own task, and the task ID it returns is the one that reports the result.
-- Bash commands in Claude chats no longer stop with "still settling" after an earlier command was cut short. Nodex no longer holds a command back to check which Run started its shell, so every command runs. A background command that outlives its Run is credited to the chat's current Run.
-- Linking a phone or inviting a Member works again on Spaces that have been in use for more than a week. Creating a link, redeeming one, and changing Space or Member administration no longer fail with "legacy operation identity".
-- Local images load more reliably on Windows.
-- A new Windows host can start a team Space. Nodex protects its settings encryption key with native Windows permissions when it creates the key.
-- A chat's composer no longer disappears. Opening a chat that finished in the background could show its messages with nothing below them while it reconnected, after its connection failed, or after its worktree was cleaned up. The composer now stays with your draft, and a line above it says what is holding the next message and offers the fix, such as Retry or Restore worktree. A chat that failed to connect also tries again on its own when you come back to it.
-- Ended background tasks clear from the Session summary after you stop an Agent. You can also use Stop to dismiss an already-ended task that still appears.
-- A heartbeat that has nothing to report stays quiet. It no longer marks its chat unread or adds to unread Automation runs, matching the notification it already skipped. Automations set to notify on failed runs only keep their successful runs quiet the same way.
-- A Database no longer fails to open after a card moves into it. Moving a card to another Database without choosing a column could leave it with no Status, and the receiving Database then showed an invalid workflow status error. A moved card now keeps its Status, Status can no longer be cleared, and cards already affected are repaired to Triage.
-- Editing a card's properties updates its last-edited time, so sorting and filtering by recent edits include cards whose Status or other properties changed.
-- `nodex page replace` rewrites long Pages in one step and keeps unchanged blocks, with their comments and links, in place.
-- `nodex page move --to page:ID` works as its help describes, a move prepared for one destination cannot be applied to another, and `nodex page rename` takes the Page first and points out swapped arguments.
-- Command line input errors name the field that is wrong and the values allowed there, and an unknown command suggests the one you likely meant.
+- Updating a plugin outside Nodex no longer blocks Claude Code or ACP replies. Nodex reloads the installed plugin before the next reply.
+
+- A terminal or background helper that loses its connection no longer leaves Nodex in a broken state, which happened most often on Windows. The affected terminal or operation now ends cleanly, and you can start it again without restarting Nodex.
 ]]></description>
-            <enclosure url="https://github.com/junyudev/nodex/releases/download/v0.5.6/Nodex-0.5.6-arm64.tar.xz" length="511675312" type="application/octet-stream" sparkle:edSignature="GQQHwQjHbEiXBpSEMvmQfcJNAMUiXW9f2H5YgWpOrbUHuPdo26gKQw1e3+Ah5nzxxwV4UeMzdOIzxm2OKhCpDw=="/>
+            <enclosure url="https://github.com/junyudev/nodex/releases/download/v0.5.7/Nodex-0.5.7-arm64.tar.xz" length="511624572" type="application/octet-stream" sparkle:edSignature="Gg0eCeJNt80PpajWHKjFxzz3gqGvNOvgFZ8rd19dRApKu9R7EfzwSO1m+Wspv9T6vSOUwllm5hIlBtnxcgeeCQ=="/>
         </item>
     </channel>
 </rss><!-- sparkle-signatures:
-edSignature: mjXt+PEKVuVp4cNxaU84iauWRAa7G88EFrndUUrGwXPV+PqFWE4Lt/UY/A42awrkkg6uEabq15FbDP1eXiiuCg==
-length: 14965
+edSignature: 8rnqDyC+SmnPu++YoD45RiPzTsOiZfAilrSY5/FTh4lklWGWutgqTcqRGfuzoSD7s9RbXmGMUM78lSxTNq1zAA==
+length: 2397
 -->
