@@ -1,16 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0" xmlns:sparkle="http://www.andymatuschak.org/xml-namespaces/sparkle"><channel><title>Nodex</title><link>https://nodex.jyu.app/</link><item><title>Nodex 0.5.7</title><sparkle:version xmlns:sparkle="http://www.andymatuschak.org/xml-namespaces/sparkle">1.27.29</sparkle:version><sparkle:shortVersionString xmlns:sparkle="http://www.andymatuschak.org/xml-namespaces/sparkle">0.5.7</sparkle:shortVersionString><pubDate>Mon, 16 Nov 2026 19:34:44 GMT</pubDate><description>### Added
-- Send a Browser annotation straight to the Agent. In the annotation editor, ⌘↵ sends the note as its own message, steering a working Agent or queueing as a typed message would, and leaves what you were typing in the chat alone; **Quick annotate** in a page's context menu sends on Enter. The Browser toolbar sends every saved annotation at once, ⌘⇧. turns annotating on and off, and holding Space lets you use the page without leaving it.
-
-### Changed
-- Browser annotations stay on the page until they reach the Agent. A saved annotation used to leave nothing behind but a small tag in the chat, and was lost if its screenshot failed or the Browser had no chat beside it. Each one is now a numbered pin you can reopen, edit or remove; it is kept when you leave annotating, switch tabs or lose the screenshot; and a Project's Browser sends to its Agent Dock. Pins follow text, elements inside frames and scrolling areas, and the Agent is told exactly what each one points at.
+<rss version="2.0" xmlns:sparkle="http://www.andymatuschak.org/xml-namespaces/sparkle"><channel><title>Nodex</title><link>https://nodex.jyu.app/</link><item><title>Nodex 0.5.8</title><sparkle:version xmlns:sparkle="http://www.andymatuschak.org/xml-namespaces/sparkle">1.27.46</sparkle:version><sparkle:shortVersionString xmlns:sparkle="http://www.andymatuschak.org/xml-namespaces/sparkle">0.5.8</sparkle:shortVersionString><pubDate>Tue, 17 Nov 2026 11:54:06 GMT</pubDate><description>### Added
+- Use Nodex in Simplified Chinese. **Settings &gt; General &gt; Language** follows your system language by default, or you can choose English or 简体中文. Open windows and menus switch at once, without a restart, and dialogs and notifications follow. Your Pages, chats and Agent replies stay in the language they were written in.
+- Use DeepSeek, Kimi, GLM or MiniMax with your own API key. Paste a key in setup or **Settings &gt; Agents &gt; API keys** and Nodex checks it, lists the provider's models and runs them on its built-in Claude Code, so there is nothing to install. Any other Anthropic-compatible endpoint, such as your team's gateway, works too. Keys are stored encrypted with your system keychain and are never shown again.
+- Nodex finds Google Antigravity on your computer and connects it in one click. If Antigravity's `agy` command line is installed, setup and **Settings &gt; Agents &gt; Other agents** offer it with its version, and connecting it keeps your existing Google sign-in and models.
 
 ### Fixed
-- Updating a plugin outside Nodex no longer blocks Claude Code or ACP replies. Nodex reloads the installed plugin before the next reply.
+- Nodex waits for a chat and its delegated work to finish before offering Accept. Only the chat's root Agent can report the Page ready, and a later round reopens the work unless you have since changed its Status.
 
-- A terminal or background helper that loses its connection no longer leaves Nodex in a broken state, which happened most often on Windows. The affected terminal or operation now ends cleanly, and you can start it again without restarting Nodex.
-</description><enclosure url="https://github.com/junyudev/nodex/releases/download/v0.5.7/Nodex-0.5.7-windows-x64.exe" length="589667438" type="application/octet-stream" xmlns:sparkle="http://www.andymatuschak.org/xml-namespaces/sparkle" sparkle:os="windows" sparkle:edSignature="2ccE8XLwQjsJ1CLRHGEarCkNx53REEc2IhD+wfFxpYYa8i1EDpUCGtW7U0F01CBfledQElh2sunvg09AvSVUCw=="/></item></channel></rss>
+- Chats with agents added through the Agent Client Protocol get a real title. They used to keep their whole opening prompt as the title; Nodex now uses the name the agent gives its own session, unless you chose a title model in Settings or renamed the chat first.
+
+- Google Antigravity can answer in Nodex. Every message to it used to fail before it could start, because it couldn’t read the format of one of Nodex’s tools; Nodex now describes its tools in a form every Agent accepts.
+</description><enclosure url="https://github.com/junyudev/nodex/releases/download/v0.5.8/Nodex-0.5.8-windows-x64.exe" length="589890663" type="application/octet-stream" xmlns:sparkle="http://www.andymatuschak.org/xml-namespaces/sparkle" sparkle:os="windows" sparkle:edSignature="fXF+onHbT8jJCfZULsgestyBkecbWmkOi0s78qum+RWzv1guZlyObSbz1326WHZcu5iugaBGcvDHg4e4i3lCCw=="/></item></channel></rss>
 <!-- sparkle-signatures:
-edSignature: GHU9oZhQuJ6zhc8mdl2rDuqvUcbfReHQd1k3peceGHEnyt+KNnwfB/QIJ9rDzaTEIUt4LoByBgR4MK4EQhQeDQ==
-length: 2306
+edSignature: w4sOfqDlzyFVcbap39bOue8qg5qS09OIh6O5o3DuIw5F6ZbzeMH1HOdgehh1tWGIY8f8fzYscjd1p92q2ma7DA==
+length: 2657
 -->
