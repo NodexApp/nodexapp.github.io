@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0" xmlns:sparkle="http://www.andymatuschak.org/xml-namespaces/sparkle"><channel><title>Nodex</title><link>https://nodex.jyu.app/</link><item><title>Nodex 0.5.9</title><sparkle:version xmlns:sparkle="http://www.andymatuschak.org/xml-namespaces/sparkle">1.27.70</sparkle:version><sparkle:shortVersionString xmlns:sparkle="http://www.andymatuschak.org/xml-namespaces/sparkle">0.5.9</sparkle:shortVersionString><pubDate>Wed, 18 Nov 2026 08:33:36 GMT</pubDate><description>Build from `3cfab5c34199739510d6169c900decd420742424`.
-</description><enclosure url="https://github.com/junyudev/nodex/releases/download/v0.5.9-nightly.20261118.2770/Nodex-0.5.9-windows-arm64.exe" length="556867778" type="application/octet-stream" xmlns:sparkle="http://www.andymatuschak.org/xml-namespaces/sparkle" sparkle:os="windows" sparkle:edSignature="FA6xOO6KSd1WrLkiz05FHEqvkWS3Z87LY6ocUatZzcvR+3DfQOgCCBA1WFow5Q0g7uu7+cuBuUf83JsRc7XRBA=="/></item></channel></rss>
+<rss version="2.0" xmlns:sparkle="http://www.andymatuschak.org/xml-namespaces/sparkle"><channel><title>Nodex</title><link>https://nodex.jyu.app/</link><item><title>Nodex 0.5.10</title><sparkle:version xmlns:sparkle="http://www.andymatuschak.org/xml-namespaces/sparkle">1.27.87</sparkle:version><sparkle:shortVersionString xmlns:sparkle="http://www.andymatuschak.org/xml-namespaces/sparkle">0.5.10</sparkle:shortVersionString><pubDate>Wed, 18 Nov 2026 18:26:34 GMT</pubDate><description>Build from `e5798e4a72f867986d8360949806268c6f159f4e`.
+</description><enclosure url="https://github.com/junyudev/nodex/releases/download/v0.5.10-nightly.20261118.2787/Nodex-0.5.10-windows-arm64.exe" length="556868483" type="application/octet-stream" xmlns:sparkle="http://www.andymatuschak.org/xml-namespaces/sparkle" sparkle:os="windows" sparkle:edSignature="QVmPptI+gW1cdYzJrV+sh7Q88iseOa0rJjtoC47dVnhc/bCgeZVqQ/It2yNewX1ZNyTUX3UIlbSclP93GKvlCw=="/></item></channel></rss>
 <!-- sparkle-signatures:
-edSignature: /YDZCw+oV8XO8elBEFBc6AA4nEThjD6lF+eEVqAbU2ggTIaJfqzyq1HMQuKLAJENpoRWz2knu1S/wzCEBnxqDQ==
-length: 996
+edSignature: jMy8g1k6DiwAck6GBqYdUdU5yeA3J7kg8MkuFyBkwhYhwnUzo0B16pZxkQXzPj2N+lHPD5m/HZHzYYnHSmVaCg==
+length: 1000
 -->
