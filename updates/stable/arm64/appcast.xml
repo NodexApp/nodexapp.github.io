@@ -3,29 +3,40 @@
     <channel>
         <title>Nodex</title>
         <item>
-            <title>0.5.8</title>
-            <pubDate>Tue, 17 Nov 2026 11:54:06 GMT</pubDate>
+            <title>0.5.9</title>
+            <pubDate>Wed, 18 Nov 2026 08:33:36 GMT</pubDate>
             <link>https://nodex.jyu.app/</link>
-            <sparkle:version>1.27.46</sparkle:version>
-            <sparkle:shortVersionString>0.5.8</sparkle:shortVersionString>
+            <sparkle:version>1.27.70</sparkle:version>
+            <sparkle:shortVersionString>0.5.9</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>15.0.0</sparkle:minimumSystemVersion>
             <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
             <description sparkle:format="markdown"><![CDATA[### Added
-- Use Nodex in Simplified Chinese. **Settings > General > Language** follows your system language by default, or you can choose English or 简体中文. Open windows and menus switch at once, without a restart, and dialogs and notifications follow. Your Pages, chats and Agent replies stay in the language they were written in.
-- Use DeepSeek, Kimi, GLM or MiniMax with your own API key. Paste a key in setup or **Settings > Agents > API keys** and Nodex checks it, lists the provider's models and runs them on its built-in Claude Code, so there is nothing to install. Any other Anthropic-compatible endpoint, such as your team's gateway, works too. Keys are stored encrypted with your system keychain and are never shown again.
-- Nodex finds Google Antigravity on your computer and connects it in one click. If Antigravity's `agy` command line is installed, setup and **Settings > Agents > Other agents** offer it with its version, and connecting it keeps your existing Google sign-in and models.
+- Run GPT-6.2 Sol at Ultrafast. Hover the speed button in the model picker to choose Standard, Fast or Ultrafast, each with what it costs; the button shows the speed in force, and `/ultrafast` switches it from the composer. Only the speeds a model offers are listed, and **Settings > Agents > Codex > Speed** can make Ultrafast the default for new chats. A chat whose model lacks the speed you carried over runs at the next speed down instead of failing.
+- Start a skill by typing `/` in the Composer. Your skills appear under **Skills** after the chat's commands, each showing where it comes from and which plugin supplies it; type part of a name to narrow the list and press Enter to put the skill in your message. Commands and skills now match the way `@` does, with the matched letters highlighted.
+
+### Changed
+- New Codex chats start on GPT-6.2 Astra, and Inbox suggestions run on GPT-6.2 Sol. GPT-6 Astra and GPT-6.1 Sol stay available in the model picker.
+- Choosing a model, reasoning level, project or fork from `/` now works like the rest of the menu. The choices open in place, you can type to narrow them (spaces included) and pick with the arrow keys and Enter, the current setting is checked, and Backspace takes you back. Model and Reasoning list exactly what the model picker offers, for every Agent, and apply the same way.
+- Claude Code's `/` menu shows only commands that work in a chat, under **Claude Code**. Commands for its terminal display, internal handoffs and ones Nodex already offers, such as `/model`, `/effort`, `/usage` or `/clear`, no longer appear twice or do nothing; Nodex's own version is listed instead. Feedback opens its own dialog.
+- Search finds the text you can see. Typing part of a Page or chat now finds it wherever that text sits: a Chinese word in the middle of a sentence, one part of `local-first`, `page_search.rs` or `PageSearchKernel`, another form of a word (`migrate` finds `migration`), a small typo, or full-width text typed in half-width. Close matches are listed after exact ones. The same query finds the same things in the command palette, `@` mentions, Database View search, Relation pickers, the Browser address bar, the Agent’s `search` tool, and `nodex search`. Attachment names, link addresses, mentioned Page titles and Property names are searchable too. Database View search reaches every eligible Page in the Data Source, including Pages you haven’t scrolled to, and keeps the View’s filters, sorting and groups.
+- Choosing a search result opens it where it matched. A Page opens scrolled to the matching Block and a chat to the matching message, with Find already on the matched text so Enter steps through the other occurrences.
+- Chat search no longer misses older or scattered matches. A chat is found when the words you type are spread across its title and several messages, commands the Agent ran and files it changed are searchable, and a strong match in an old chat is no longer hidden behind weaker recent ones. Native Codex chats use the same matching and open at the selected message. History joins in the background, including readable remote hosts; search says when history is still catching up or more matches exist than it shows.
+- Find Pages and chats across the Space, including archived results. The palette can narrow search to one Project and highlights a strong Top result in All. Agents can search Pages, Blocks, and chats with the same tool.
+- Find uses one bar for Pages, chats, diffs and the Browser. It ignores accents and character width, finds text across inline formatting, and offers Replace in writable Pages. `Cmd/Ctrl+G` and `Cmd/Ctrl+Shift+G` move to the next and previous match; chat search remains in the command palette and `O T`.
+- Searching a Database View finds every matching row, not only the rows already loaded. The View keeps its own filters, sort and groups, and Agents reading the View you see get the same rows.
+- Pasting a Page link on an empty line inserts a mention instead of embedding the whole Page. To embed it, right-click the mention and choose **Turn into embed**; the same menu opens the Page or copies its deeplink.
+
+### Removed
+- The command palette's Page Filter. Narrow a search to one Project with the place control beside the search field, and filter by Status, Priority, Tags or Assignee in a Database View.
 
 ### Fixed
-- Nodex waits for a chat and its delegated work to finish before offering Accept. Only the chat's root Agent can report the Page ready, and a later round reopens the work unless you have since changed its Status.
-
-- Chats with agents added through the Agent Client Protocol get a real title. They used to keep their whole opening prompt as the title; Nodex now uses the name the agent gives its own session, unless you chose a title model in Settings or renamed the chat first.
-
-- Google Antigravity can answer in Nodex. Every message to it used to fail before it could start, because it couldn’t read the format of one of Nodex’s tools; Nodex now describes its tools in a form every Agent accepts.
+- Turning a Page embed into Text, a heading or a list keeps the Page as a mention. It used to leave an empty line and lose the connection.
+- A message sent while a chat is still starting is no longer rejected. Sending from your phone in the moments after a chat began, before the Agent was at work, failed with "Your message wasn't sent"; it now waits and joins the Agent's turn as soon as that turn begins. A message sent while the Agent compacts its context waits as the next message instead of failing.
 ]]></description>
-            <enclosure url="https://github.com/junyudev/nodex/releases/download/v0.5.8/Nodex-0.5.8-arm64.tar.xz" length="511937384" type="application/octet-stream" sparkle:edSignature="RpVd/O5Z7KguuJA9JSpZfDla375rayupnbIjYsHKoIP12h7NHDaWjZii2Sb6IS22r2Vgzzq8qNwc7d8kzEoQDA=="/>
+            <enclosure url="https://github.com/junyudev/nodex/releases/download/v0.5.9/Nodex-0.5.9-arm64.tar.xz" length="512288160" type="application/octet-stream" sparkle:edSignature="XeYnYauiqiPH6h7u+7QUofQzhY1YTRoEH8iJZ9IUEKLXgi9hGKD8jokUqlbzNzI9Oq99B4TLbYmQu/yawjFWBA=="/>
         </item>
     </channel>
 </rss><!-- sparkle-signatures:
-edSignature: ulDTLyq8eC8f/0dkxE3eWy8aAtuHdbqzzLAoIcqVtcJDTq6b1moUEYvCDoXuj3Gemb4SoqdobJNqLO4PPQm6AA==
-length: 2730
+edSignature: iOSyotELmhtD4OZl85HgIjLvzulPfaKGucyk9TIlARtpDFsfRgVIMb3n5xEIsYaJxWM2tpNNrY95fSOo7ydwBg==
+length: 5885
 -->
