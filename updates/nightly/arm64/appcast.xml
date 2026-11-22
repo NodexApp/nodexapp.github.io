@@ -4,18 +4,18 @@
         <title>Nodex</title>
         <item>
             <title>0.5.11</title>
-            <pubDate>Sat, 21 Nov 2026 23:54:45 GMT</pubDate>
+            <pubDate>Sun, 22 Nov 2026 19:11:15 GMT</pubDate>
             <link>https://nodex.jyu.app/</link>
-            <sparkle:version>1.28.22</sparkle:version>
+            <sparkle:version>1.28.70</sparkle:version>
             <sparkle:shortVersionString>0.5.11</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>15.0.0</sparkle:minimumSystemVersion>
             <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
-            <description sparkle:format="markdown"><![CDATA[Build from `96a152468a0ca47ae9453d4549b510787213aaef`.
+            <description sparkle:format="markdown"><![CDATA[Build from `dc48848984b036b995f550718daaf6abccd43e74`.
 ]]></description>
-            <enclosure url="https://github.com/junyudev/nodex/releases/download/v0.5.11-nightly.20261121.2822/Nodex-0.5.11-arm64.tar.xz" length="162465840" type="application/octet-stream" sparkle:edSignature="xNsOc+y0HjcWmDRn76rs8oHUcfsRlbUo2uiVgiNqbjWZS6kB6k5bii6jZ31suxxB0A/FBUTipMvqWKUhrdyHAg=="/>
+            <enclosure url="https://github.com/junyudev/nodex/releases/download/v0.5.11-nightly.20261122.2870/Nodex-0.5.11-arm64.tar.xz" length="162704440" type="application/octet-stream" sparkle:edSignature="s9ee7z9NIT84CMqOeFB73XHT8+Lp8l2T7u1p6IJxK9sTOYGnJtypzf6Ip7kjUfAYhhbEjT7cxuWH4XQYmQF8Cw=="/>
         </item>
     </channel>
 </rss><!-- sparkle-signatures:
-edSignature: fKvR8z8dLEo3oRAvy9iTmMkx7dNBuYBbExXLBsHfjPUFmpId01ZHIFqoftvljJjngBRsYdK5ZJx3tJfnHpR8CQ==
+edSignature: lRkgtpMf5tQNiMVFhErWGHsjH9Aj+gh4DJySc8V6sQ4pYpBDMGwEwqewvFaVr9T1WZqnoV70BZtf5se5rEJIDw==
 length: 1089
 -->
