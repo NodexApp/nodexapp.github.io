@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0" xmlns:sparkle="http://www.andymatuschak.org/xml-namespaces/sparkle"><channel><title>Nodex</title><link>https://nodex.jyu.app/</link><item><title>Nodex 0.5.13</title><sparkle:version xmlns:sparkle="http://www.andymatuschak.org/xml-namespaces/sparkle">1.30.14</sparkle:version><sparkle:shortVersionString xmlns:sparkle="http://www.andymatuschak.org/xml-namespaces/sparkle">0.5.13</sparkle:shortVersionString><pubDate>Wed, 25 Nov 2026 07:59:47 GMT</pubDate><description>Build from `f96ca1b93d28553c6836f9325654d6b04ef51c6e`.
-</description><enclosure url="https://github.com/junyudev/nodex/releases/download/v0.5.13-nightly.20261125.3014/Nodex-0.5.13-windows-arm64.exe" length="609376744" type="application/octet-stream" xmlns:sparkle="http://www.andymatuschak.org/xml-namespaces/sparkle" sparkle:os="windows" sparkle:edSignature="5YdPQlwDmeDLac2cEI3R5LKpdg5NedSaf9gflpYKVVofv30E+fpVgEPXJ4jWOk/hSF8qMm3qcZp8l6ADxN2XBA=="/></item></channel></rss>
-<!-- sparkle-signatures:
-edSignature: Zp/wanFY10HPGKTypuRuVavsVER3gSPrtHP3nC/WnbOki07gv9Ezl4QpoJo0mGKgahecKJDmOYGBPX43tnFiCw==
-length: 1000
--->
