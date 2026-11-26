@@ -3,19 +3,19 @@
     <channel>
         <title>Nodex</title>
         <item>
-            <title>0.5.14</title>
-            <pubDate>Wed, 25 Nov 2026 17:12:29 GMT</pubDate>
+            <title>0.5.15</title>
+            <pubDate>Thu, 26 Nov 2026 04:09:53 GMT</pubDate>
             <link>https://nodex.jyu.app/</link>
-            <sparkle:version>1.30.48</sparkle:version>
-            <sparkle:shortVersionString>0.5.14</sparkle:shortVersionString>
+            <sparkle:version>1.31.4</sparkle:version>
+            <sparkle:shortVersionString>0.5.15</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>15.0.0</sparkle:minimumSystemVersion>
             <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
-            <description sparkle:format="markdown"><![CDATA[Build from `85d4cd314b51fbf502a30d69e76a24d4ce3e26ba`.
+            <description sparkle:format="markdown"><![CDATA[Build from `310d91992056339c2be2047761e523c422379bd3`.
 ]]></description>
-            <enclosure url="https://github.com/junyudev/nodex/releases/download/v0.5.14-nightly.20261125.3048/Nodex-0.5.14-arm64.tar.xz" length="163272268" type="application/octet-stream" sparkle:edSignature="N37OqCECwv9FTlWW3JNFaw6OPKYjUAgaciVAUChJfXZGRf1Rcm3FDDLCoz06HdQtD/g3zG02UKihKis4dOx9Aw=="/>
+            <enclosure url="https://github.com/junyudev/nodex/releases/download/v0.5.15-nightly.20261126.3104/Nodex-0.5.15-arm64.tar.xz" length="163305712" type="application/octet-stream" sparkle:edSignature="UGKiPdfW2yLwR8q6rscE85zyNLK3RkBypA3ZGbxjcki+/6i+sFAhue32NoMPZlGMVh/XCkHFTHbjcA7oEoNIDg=="/>
         </item>
     </channel>
 </rss><!-- sparkle-signatures:
-edSignature: /SqcHpLV+WJiW/ayCMOIq8XXumkulSzF2t30IPFSNqymA18wMCUckkdJ4nr668O/w9nIpawC0fbwsXtJSrrqBg==
-length: 1089
+edSignature: K7XrFK2QaaKVvZwz7WyNEoK1l/MREJNp8Z+Wdkz/PLCYOW6VJRxw2YwCOn0UjAxVpD/4TjvPKnKdopsOh7iIAQ==
+length: 1088
 -->
